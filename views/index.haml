@@ -4,7 +4,8 @@
     %link(rel="stylesheet" type="text/css" href="style.css")
     %title Programming Quotes
   %body
-    %blockquote
-      %p.quote &#8220;
-      %p.content= @quote[:c].gsub($/, "<br>")
-      %p.author= @quote[:a] || "Anonymous"
+    #container
+      %blockquote
+        %p.quote &#8220;
+        %p.content= @quote[:c].gsub($/, "<br>")
+        %p.author= @quote[:a] || "Anonymous"
