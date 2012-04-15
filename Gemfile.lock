@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    haml (3.1.4)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -12,6 +13,8 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
+  haml
   sinatra
