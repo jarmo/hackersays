@@ -62,11 +62,11 @@
 - :c: Weeks of coding can save you hours of planning.
 
 - :c: |
-    "A programmer started to cuss
+    A programmer started to cuss
     Because getting to sleep was a fuss
     As he lay there in bed
     Looping 'round in his head
-    was: while(!asleep()) sheep++;"
+    was: while(!asleep()) sheep++;
 
 - :c: Beware of bugs in the above code; I have only proved it correct, not tried it.
   :a: Donald Knuth
@@ -115,3 +115,100 @@
   :a: Edsger W. Dijkstra
 
 - :c: There's no test like production.
+
+- :c: We better hurry up and start coding, there are going to be a lot of bugs to fix.
+
+- :c: Mostly, when you see programmers, they aren't doing anything. One of the attractive things about programmers is that you cannot tell whether or not they are working simply by looking at them. Very often they're sitting there seemingly drinking coffee and gossiping, or just staring into space. What the programmer is trying to do is get a handle on all the individual and unrelated ideas that are scampering around in his head.
+  :a: Charles M Strauss
+
+- :c: The greatest performance improvement of all is when a system goes from not-working to working.
+  :a: John Ousterhout
+
+- :c: Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.
+  :a: Eric Raymond
+
+- :c: To iterate is human, to recurse divine.
+  :a: L. Peter Deutsch
+
+- :c: "C++ : Where friends have access to your private members."
+  :a: Gavin Russell Baker
+
+- :c: A computer is a stupid machine with the ability to do incredibly smart things, while computer programmers are smart people with the ability to do incredibly stupid things. They are, in short, a perfect match.
+  :a: Bill Bryson
+
+- :c: UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity.
+  :a: Dennis Ritchie
+
+- :c: Walking on water and developing software from a specification are easy if both are frozen.
+  :a: Edward V Berard
+
+- :c: It always takes longer than you expect, even when you take into account Hofstadter's Law.
+  :a: Hofstadter's Law
+
+- :c: Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
+  :a: Rick Osborne
+
+- :c: Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.
+  :a: Brian Kernighan
+
+- :c: The first 90% of the code accounts for the first 90% of the development time. The remaining 10% of the code accounts for the other 90% of the development time.
+  :a: Tom Cargill
+
+- :c: Java is to JavaScript what Car is to Carpet.
+  :a: Chris Heilmann
+ 
+- :c: If you want to set off and go develop some grand new thing, you don't need millions of dollars of capitalization. You need enough pizza and Diet Coke to stick in your refrigerator, a cheap PC to work on and the dedication to go through with it.
+  :a: John Carmack
+
+- :c: The idea that I can be presented with a problem, set out to logically solve it with the tools at hand, and wind up with a program that could not be legally used because someone else followed the same logical steps some years ago and filed for a patent on it is horrifying.
+  :a: John Carmack on software patents
+
+- :c: "Some people, when confronted with a problem, think \"I know, I'll use regular expressions.\" Now they have two problems."
+  :a: Jamie Zawinski
+  
+- :c: "There are only two kinds of languages: the ones people complain about and the ones nobody uses."
+  :a: Bjarne Stroustrup
+
+- :c: I have always wished for my computer to be as easy to use as my telephone; my wish has come true because I can no longer figure out how to use my telephone.
+  :a: Bjarne Stroustrup
+
+- :c: Linux is only free if your time has no value.
+  :a: Jamie Zawinski
+
+- :c: It works on my machine.
+
+- :c: It should be noted that no ethically-trained software engineer would ever consent to write a DestroyBaghdad procedure. Basic professional ethics would instead require him to write a DestroyCity procedure, to which Baghdad could be given as a parameter.
+  :a: Nathaniel S Borenstein
+
+- :c: In order to understand recursion, one must first understand recursion.
+
+- :c: On two occasions I have been asked [by members of Parliament], 'Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?' I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question.
+  :a: Charles Babbage
+
+- :c: If debugging is the process of removing software bugs, then programming must be the process of putting them in.
+  :a: Edsger Dijkstra
+
+- :c: PHP is a minor evil perpetrated and created by incompetent amateurs, whereas Perl is a great and insidious evil perpetrated by skilled but perverted professionals.
+  :a: Jon Ribbens
+
+- :c: Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
+  :a: Antoine de Saint Exupéry
+
+- :c: Computer Science is no more about computers than astronomy is about telescopes.
+  :a: E. W. Dijkstra
+
+- :c: Better train people and risk they leave – than do nothing and risk they stay.
+
+- :c: Before software should be reusable, it should be usable.
+  :a: Ralph Johnson
+
+- :c: The generation of random numbers is too important to be left to chance.
+  :a: Robert R. Coveyou, Oak Ridge National Laboratory
+
+- :c: Anyone who considers arithmetic methods of producing random digits is, of course, in a state of sin.
+  :a: John von Neumann
+
+- :c: I love deadlines. I like the whooshing sound they make as they fly by.
+  :a: Douglas Adams
+
+
