@@ -1,4 +1,6 @@
-html {
+html {min-height: 100%}
+
+body {
   background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #425370 100%);
   background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #425370 100%);
   background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #425370 100%);
@@ -6,8 +8,8 @@ html {
   background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #425370 100%);
   background-image: linear-gradient(bottom, #FFFFFF 0%, #425370 100%);
   background-image: #425370;
-  height: 100%;
   color: #353535;
+  font: 2.6em/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 blockquote {
@@ -24,11 +26,10 @@ blockquote {
 }
 
 .quote {
-  font-size: 200px;
+  font-size: 250px;
   float: left;
-  margin-top: -75px;
+  margin-top: -95px;
   padding-right: 10px;
-  padding-bottom: 100%;
 }
 
 .author {
