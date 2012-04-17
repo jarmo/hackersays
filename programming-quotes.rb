@@ -1,8 +1,21 @@
 # encoding: UTF-8
 require "sinatra"
 require "haml"
+require "sass"
+require "compass"
 require "yaml"
 require "yajl"
+
+configure do
+  Compass.configuration do |config|
+    config.project_path = File.dirname(__FILE__)
+    config.sass_dir = 'views'
+    config.output_style = :compressed
+  end
+
+  set :haml, {:format => :html5}
+  set :scss, Compass.sass_engine_options
+end
 
 def quotes
   #@quotes = YAML.load <<-EOF
@@ -27,5 +40,10 @@ end
 get '/quote' do
   content_type 'application/json', :charset => 'utf-8'
   Yajl::Encoder.encode format(quotes.sample)
+end
+
+get '/style.css' do
+  content_type 'text/css', :charset => 'utf-8'
+  scss :style
 end
 

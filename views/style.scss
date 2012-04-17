@@ -1,0 +1,41 @@
+@import "compass/reset";
+@import "compass/css3/images";
+
+html { min-height: 100%; }
+
+body {
+  background-color: #425370;
+  @include background-image(linear-gradient(#425370, #fff));
+  color: #353535;
+  font: 2.6em / 1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#container { height: 100%; }
+
+blockquote {
+  font-weight: bold;
+  margin-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  display: none;
+}
+
+.content {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.quote {
+  font-size: 250px;
+  float: left;
+  margin-top: -93px;
+  padding-right: 10px;
+}
+
+.author {
+  text-align: right;
+  font-size: 20px;
+  color: #454545;
+  &:before { content: '\2014    '; }
+}
