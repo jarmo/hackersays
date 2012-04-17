@@ -9,7 +9,7 @@ $(function() {
       if (hasQuoteOnScreen(data))
         loadNewQuote();
       else
-        setTimeout(function() {renderQuote(data)}, 8000);
+        setTimeout(function() {renderQuote(data)}, 15000);
     })
      .fail(function() {
        setTimeout(loadNewQuote, 5000);
