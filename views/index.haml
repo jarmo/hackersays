@@ -2,10 +2,12 @@
 %html
   %head
     %link(rel="stylesheet" type="text/css" href="style.css")
+    %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+    %script(type="text/javascript" src="script.js")
     %title Programming Quotes
   %body
     #container
       %blockquote
         %p.quote &#8220;
-        %p.content= @quote[:c].gsub($/, "<br>")
-        %p.author= @quote[:a] || "Anonymous"
+        %p.content= @quote[:c]
+        %p.author= @quote[:a]

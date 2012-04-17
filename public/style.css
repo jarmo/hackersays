@@ -7,10 +7,12 @@ body {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #425370));
   background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #425370 100%);
   background-image: linear-gradient(bottom, #FFFFFF 0%, #425370 100%);
-  background-image: #425370;
+  background-color: #425370;
   color: #353535;
   font: 2.6em/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+#container {height: 100%}
 
 blockquote {
   font-weight: bold;
@@ -18,6 +20,7 @@ blockquote {
   margin-left: auto;
   margin-right: auto;
   width: 700px;
+  display: none;
 }
 
 .content {
