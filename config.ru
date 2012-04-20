@@ -1,2 +1,2 @@
 require './lib/programming-quotes'
-run Sinatra::Application
+run ProgrammingQuotes
