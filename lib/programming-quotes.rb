@@ -19,8 +19,6 @@ class ProgrammingQuotes < Sinatra::Base
   end
 
   def quotes
-    #@quotes = YAML.load <<-EOF
-    #EOF
     f = File.open(File.dirname(__FILE__) + "/data.yaml", "r:utf-8")
     @quotes = YAML.load f.read
   ensure
