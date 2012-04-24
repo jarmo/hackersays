@@ -5,6 +5,7 @@ require "sass"
 require "compass"
 require "yaml"
 require "yajl"
+require 'digest/sha1'
 
 class ProgrammingQuotes < Sinatra::Base
   configure do
@@ -19,10 +20,26 @@ class ProgrammingQuotes < Sinatra::Base
   end
 
   def quotes
-    f = File.open(File.dirname(__FILE__) + "/data.yaml", "r:utf-8")
-    @quotes = YAML.load f.read
-  ensure
-    f.close
+    return @quotes if production? && !@quotes.nil?
+
+    begin
+      f = File.open(File.dirname(__FILE__) + "/data.yaml", "r:utf-8")
+      raw_quotes = YAML.load f.read
+      @quotes = raw_quotes.reduce({}) do |memo, quote|
+        quote = format quote
+        id = Digest::SHA1.hexdigest quote[:a] + quote[:c]
+        memo[id[0..5]] = quote
+        memo
+      end
+    ensure
+      f.close
+    end
+  end
+
+  def random_quote
+    quotes_by_id = quotes
+    quote_id = quotes_by_id.keys.sample
+    quotes_by_id[quote_id].merge(:id => quote_id)
   end
 
   def format quote
@@ -32,13 +49,16 @@ class ProgrammingQuotes < Sinatra::Base
   end
 
   get '/' do
-    @quote = format quotes.sample
     haml :index
   end
 
   get '/quote' do
+    id = params[:id]
+    quote_by_id = quotes[id && id[1..-1]]
+    quote = quote_by_id ? quote_by_id.merge(:id => id) : random_quote
+
     content_type 'application/json', :charset => 'utf-8'
-    Yajl::Encoder.encode format(quotes.sample)
+    Yajl::Encoder.encode quote
   end
 
   get '/style.css' do
