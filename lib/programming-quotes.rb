@@ -25,7 +25,7 @@ class ProgrammingQuotes < Sinatra::Base
     return @quotes if production? && !@quotes.nil?
 
     begin
-      f = File.open(File.dirname(__FILE__) + "/data.yaml", "r:utf-8")
+      f = File.open(File.dirname(__FILE__) + "/quotes.yaml", "r:utf-8")
       raw_quotes = YAML.load f.read
       @quotes = raw_quotes.reduce({}) do |memo, quote|
         quote = format quote
