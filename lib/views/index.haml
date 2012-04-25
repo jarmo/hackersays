@@ -17,6 +17,16 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   %body
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    .fb-like(data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial")
     %a(href="https://twitter.com/share" class="twitter-share-button" data-text="I've just read an amusing programming quote." data-hashtags="programming") Tweet
     :javascript
       !function(d,s,id){
