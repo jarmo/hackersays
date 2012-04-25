@@ -4,7 +4,6 @@ class WwwMiddleware
   end
 
   def call(env)
-    require "ruby-debug"; debugger;
     request = Rack::Request.new(env)
     if request.host.starts_with?("www.")
       [301, {"Location" => request.url.sub("//www.", "//")}, self]
