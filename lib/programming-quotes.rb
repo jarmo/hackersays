@@ -6,6 +6,7 @@ require "compass"
 require "yaml"
 require "yajl"
 require 'digest/sha1'
+require "./lib/ext/www-middleware"
 
 class ProgrammingQuotes < Sinatra::Base
   configure do
@@ -17,6 +18,7 @@ class ProgrammingQuotes < Sinatra::Base
 
     set :haml, {:format => :html5}
     set :scss, Compass.sass_engine_options
+    use WwwMiddleware
   end
 
   def quotes
