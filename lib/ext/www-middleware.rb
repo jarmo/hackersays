@@ -5,7 +5,7 @@ class WwwMiddleware
 
   def call(env)
     request = Rack::Request.new(env)
-    if request.host.starts_with?("www.")
+    if request.host[0..3] == "www."
       [301, {"Location" => request.url.sub("//www.", "//")}, self]
     else
       @app.call(env)
