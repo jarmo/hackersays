@@ -48,11 +48,6 @@ class ProgrammingQuotes < Sinatra::Base
     quotes[id] && quotes[id].merge(:id => id)
   end
 
-  get '/' do
-    @quote = quote(params[:id]) || random_quote
-    haml :index
-  end
-
   get '/quote' do
     content_type 'application/json', :charset => 'utf-8'
     Yajl::Encoder.encode random_quote
@@ -61,6 +56,11 @@ class ProgrammingQuotes < Sinatra::Base
   get '/style.css' do
     content_type 'text/css', :charset => 'utf-8'
     scss :style
+  end
+
+  get '/:id?' do
+    @quote = quote(params[:id]) || random_quote
+    haml :index
   end
 
   run! if app_file == $0
