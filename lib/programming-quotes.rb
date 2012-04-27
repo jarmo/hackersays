@@ -28,7 +28,8 @@ class ProgrammingQuotes < Sinatra::Base
       f = File.open(File.dirname(__FILE__) + "/quotes.yaml", "r:utf-8")
       raw_quotes = YAML.load f.read
       @quotes = raw_quotes.reduce({}) do |memo, quote|
-        quote = format quote
+        quote[:c].gsub!($/, "<br>")
+        quote[:a] = quote[:a] || "Anonymous"
         id = Digest::SHA1.hexdigest quote[:a] + quote[:c]
         memo[id[0..5]] = quote
         memo
@@ -39,28 +40,22 @@ class ProgrammingQuotes < Sinatra::Base
   end
 
   def random_quote
-    quotes_by_id = quotes
-    quote_id = quotes_by_id.keys.sample
-    quotes_by_id[quote_id].merge(:id => quote_id)
+    quote quotes.keys.sample
   end
 
-  def format quote
-    quote[:c].gsub!($/, "<br>")
-    quote[:a] = quote[:a] || "Anonymous"
-    quote
+  def quote(id)
+    return unless id
+    quotes[id] && quotes[id].merge(:id => id)
   end
 
   get '/' do
+    @quote = quote(params[:id]) || random_quote
     haml :index
   end
 
   get '/quote' do
-    id = params[:id]
-    quote_by_id = quotes[id && id[1..-1]]
-    quote = quote_by_id ? quote_by_id.merge(:id => id) : random_quote
-
     content_type 'application/json', :charset => 'utf-8'
-    Yajl::Encoder.encode quote
+    Yajl::Encoder.encode random_quote
   end
 
   get '/style.css' do

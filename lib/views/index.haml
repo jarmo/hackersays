@@ -2,7 +2,10 @@
 %html
   %head
     %link(rel="stylesheet" type="text/css" href="style.css")
-    %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+    %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+    %script(type="text/javascript" src="jquery.history-v1.7.1-r2.js")
+    :javascript
+      var CURRENT_QUOTE = #{Yajl::Encoder.encode @quote};
     %script(type="text/javascript" src="script.js")
     %title Programming Quotes
     :javascript
