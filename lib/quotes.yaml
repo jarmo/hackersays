@@ -688,3 +688,517 @@
 - :c: Anything that can go wrong will go wrong, anything that can't go wrong will go wrong anyway.
 
 - :c: Code is never finished, only abandoned.
+
+- :c: Don't code today what you can't debug tomorrow
+
+- :c: Software is like entropy. It is difficult to grasp, weighs nothing, and obeys the second law of thermodynamics; i.e. it always increases.
+
+- :c: Don't fix it if it ain't broke presupposes that you can't improve something that works reasonably well already. If the world's inventors had believed this, we'd still be driving Model A Fords and using outhouses.
+  :a: H. W. Kenton
+
+- :c: Inside every complex program is a simple program trying to get out.
+
+- :c: Users are a terrible thing. Systems would be infinitely more stable without them.
+  :a: Michael T. Nygard.
+
+- :c: If it doesn't work, change the documentation.
+
+- :c: If you can build it, your users can break it.
+
+- :c: C is quirky, flawed and an enormous success.
+  :a: Dennis Ritchie
+
+- :c: Hardware is the part of a system you can kick. Software is the one you can only curse at.
+
+- :c: Good software, like wine, takes time.
+  :a: Joel Spolsky
+
+- :c: The use of COBOL cripples the mind; its teaching should, therefore, be regarded as a criminal offence.
+  :a: Edsger Dijkstra
+
+- :c: If you give someone a program, you will frustrate them for a day; if you teach them how to program, you will frustrate them for a lifetime.
+
+- :c: The best things are simple, but finding these simple things is not simple.
+
+- :c: Software is either testable or detestable.
+
+- :c: The definition of insanity is doing the same thing over and over and expecting a different result.
+
+- :c: Are you quite sure that all those bells and whistles, all those wonderful facilities of your so called powerful programming languages, belong to the solution set rather than the problem set?
+  :a: Edsger W. Dijkstra
+
+- :c: I have always found that plans are useless, but planning is indispensable.
+  :a: Dwight D. Eisenhower
+
+- :c: If the automobile had followed the same development cycle as the computer, a Rolls-Royce would today cost $100, get a million miles per gallon, and explode once a year, killing everyone inside.
+  :a: Robert X. Cringely
+
+- :c: |
+    You want a dot operator in PHP?
+    eval(str_replace('.', '->', $code_with_dot_operator))
+  :a: Matthew Leffler
+
+- :c: In a world without walls and fences, who needs Windows and Gates?
+
+- :c: It's interface, not in your face.
+  :a: Kai Krause
+
+- :c: No code is faster than no code.
+
+- :c: |
+   I finally found a definition for "middleware". "Middleware" is the software nobody wants to pay for.
+  :a: Chris Stone
+
+- :c: If you lie to the compiler, it will get its revenge.
+  :a: Henry Spencere
+
+- :c: The primary duty of an exception handler is to get the error out of the lap of the programmer and into the surprised face of the user. Provided you keep this cardinal rule in mind, you can't go far wrong.
+  :a: Verity Stob
+
+- :c: A fool with a tool is still a fool.
+
+- :c: Never attribute to malice that which can be adequately explained by stupidity.
+  :a: Hanlon's Razor
+
+- :c: Once you've dressed and before you leave the house, look in the mirror and take at least one thing off.
+  :a: Coco Chanel
+
+- :c: The function name should define everything the function does.
+
+- :c: "Every revolutionary idea seems to evoke three stages of reaction: One, it's completely impossible. Two, it's possible, but it's not worth doing. Three, I said it was a good idea all along."
+  :a: Arthur C. Clarke
+
+- :c: Make something fool-proof and someone will make a better fool.
+
+- :c: The real money isn't in the software. It's in the service you build with that software.
+  :a: Jeff Atwood
+
+- :c: The limits of my language mean the limits of my world.
+  :a: Ludwig Wittgenstein
+
+- :c: Compatibility means deliberately repeating other people's mistakes.
+
+- :c: |
+   [The common definition of estimate is] "An estimate is the most optimistic prediction that has a non-zero probability of coming true" . . .
+   Accepting this definition leads irrevocably toward a method called what's-the-earliest- date-by-which-you-can't-prove-you-won't-be- finished estimating.
+  :a: Tom DeMarco
+
+- :c: All programmers are optimists.
+  :a: Frederick Brooks
+
+- :c: C++ is more of a rube-goldberg type thing full of high-voltages, large chain-driven gears, sharp edges, exploding widgets, and spots to get your fingers crushed. And because of it's complexity many (if not most) of it's users don't know how it works, and can't tell ahead of time what's going to cause them to loose an arm.
+  :a: Grant Edwards
+
+- :c: "C: a language that combines all the elegance and power of assembly language with all the readability and maintainability of assembly language."
+
+- :c: Selecting a project due date before the requirements are properly gathered is like selecting which corner you want to paint yourself into, while simultaneously negating the doorway as a viable option.
+  :a: Chris Ames
+
+- :c: Like a gas, software expands to fill its containing memory completely.
+
+- :c: If you get it free, it is worthless. If you pay for it, it has value. If you build it yourself, it is priceless.
+  :a: Raj More
+
+- :c: |
+    When a professional race car driver races, his pulse gets lower and he relaxes. 
+    When I code it is the same thing.
+  :a: Jun-ichiro Hagino
+
+- :c: C++ is to C as Lung Cancer is to Lung.
+
+- :c: |
+    People who think, "Oh this is a one-off," need to be offed, or perhaps politely removed from the project.
+  :a: George Neville-Neil
+
+- :c: Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.
+  :a: Conway's Law
+
+- :c: An ideal world is left as an exercise to the reader.
+  :a: From Paul Graham's "On Lisp"
+
+- :c: |
+    What you’ve described, “The bottleneck in writing code isn’t in the writing of the code, it’s in understanding and conceptualising what needs to be done,” is common to all highly abstract programming languages. Writing Haskell, for example, involves an hour of meditation followed by the emission of a fold expression.
+  :a: Jonathan Feinberg
+
+- :c: Complexity has nothing to do with intelligence, simplicity does.
+  :a: Larry Bossidy
+
+- :c: C is to programming as Latin is to literature.
+
+- :c: "Think of it this way: threads are like salt, not like pasta. You like salt, I like salt, we all like salt. But we eat more pasta."
+  :a: Larry McVoy
+
+- :c: A programmer never dies he just degrades gracefully.
+
+- :c: All real programmers know C of course.
+  :a: Jeff Atwood
+
+- :c: Good enough is neither.
+  :a: Jim Spivey
+
+- :c: Use four digits. A new millenium is coming.
+  :a: Jon Bentley (1976)
+
+- :c: KISS - Keep It Simple Stupid
+
+- :c: If you want to confuse your enemies, give them the source code. If you want to really confuse them, give them the documentation.
+
+- :c: Good programmers invest the effort to learn how to use current practices. Not-so-good programmers just learn the buzzwords, and that’s been a software industry constant for a half century.
+  :a: Boris Beizer
+
+- :c: Processes and methodologies can make good servants but are poor masters.
+  :a: Mark Dowd, John McDonald & Justin Schuh 
+
+- :c: Simplicity is hard to build, easy to use, and hard to charge for. Complexity is easy to build, hard to use, and easy to charge for.
+  :a: Chris Sacca 
+
+- :c: If you've seen one picture of the Mandelbrot Set, you've seen them all.
+  :a: Bill Karwin
+
+- :c: The third version is the first version that doesn't suck.
+  :a: Mike Simpson
+
+- :c: Computers make it easier to do a lot of things, but most of the things they make it easier to do don't need to be done.
+  :a: Andy Rooney
+
+- :c: Like wine, the mastery of programming matures with time. But, unlike wine, it gets sweeter in the process.
+  :a: Lawrence Mucheka
+
+- :c: Amateur programmers think there are 1000 bytes in a kilobyte; Real Programmers know there are 1024 meters in a kilometer.
+
+- :c: A documented bug is not a bug; it is a feature.
+  :a: James P. MacLennan
+
+- :c: I'm not a great programmer; I'm just a good programmer with great habits.
+  :a: Kent Beck
+
+- :c: If you use copy and paste while you're coding, you're probably committing a design error.
+  :a: David Parnas
+
+- :c: Programming is not like being in the CIA; you don't get credit for being sneaky. It's more like advertising; you get lots of credit for making your connections as blatant as possible.
+  :a: Steve McConnell on coupling from, "Code Complete."
+
+- :c: It's not what the software does. It's what the user does.
+  :a: Hugh Macleod
+
+- :c: Good programmers know what to write. Great ones know what to rewrite (and reuse).
+  :a: Eric Raymond
+
+- :c: Testing like the TSA.
+  :a: David Heinemeier Hansson on testing too much
+
+- :c: When in doubt, leave it out.
+  :a: Joshua Bloch 
+
+- :c: |
+    A computer scientist counts to ten: 0, 1, 2, 3, 4 ...
+    Everyone else counts to ten: 1, 2, 3, 4, 5
+
+- :c: A complex system that works is invariably found to have evolved from a simple system that worked.
+  :a: John Gall
+
+- :c: Enlightened trial and error outperforms the planning of flawless intellects.
+  :a: David Kelly
+
+- :c: It's OK to figure out murder mysteries, but you shouldn't need to figure out code. You should be able to read it.
+  :a: Steve McConnell
+
+- :c: Working software is the primary measure of progress.
+  :a: Agile Manifesto
+
+- :c: Simplicity - the art of maximizing the amount of work not done - is essential.
+  :a: Agile Manifesto
+
+- :c: C trades a slap on the wrist at compile time for a knife in the back at run time.
+
+- :c: Elegance is not optional.
+  :a: Richard A. O'Keefe (from The Craft of Prolog)
+
+- :c: It makes no sense to try to do what we can. We must do what is necessary.
+  :a: Winston Churchill
+
+- :c: 80 percent of my problems are simple logic errors. 80 percent of the remaining problems are pointer errors. The remaining problems are hard.
+  :a: Mark Donner, IBM Watson Research Center
+
+- :c: Software isn't about methodologies, languages, or even operating systems. It is about working applications. 
+  :a: Christopher Baus
+
+- :c: |
+    ... what society overwhelmingly asks for is snake oil. Of course, the snake oil has the most impressive names — otherwise you would be selling nothing — like "Structured Analysis and Design", "Software Engineering", "Maturity Models", "Management Information Systems", "Integrated Project Support Environments" "Object Orientation" and "Business Process Re-engineering" (the latter three being known as IPSE, OO and BPR, respectively).
+  :a: Edsger W. Dijkstra
+
+- :c: Python's syntax succeeds in combining the mistakes of Lisp and Fortran. I do not construe that as progress.
+  :a: Larry Wall
+
+- :c: He who hasn't hacked assembly language as a youth has no heart. He who does as an adult has no brain.
+  :a: John Moore
+
+- :c: Any intelligent fool can make things bigger and more complex. It takes a touch of genius - and a lot of courage - to move in the opposite direction.
+  :a: E.F. Schumacher
+
+- :c: If it doesn't have to work, we can do it real quick.
+  :a: Watts Humphrey
+
+- :c: If at first you don't succeed, try/catch, try/catch again.
+
+- :c: Software Engineering isn't rocket science ... it's harder.
+
+- :c: I do not fear computers. I fear the lack of them.
+  :a: Isaac Asimov
+
+- :c: Never underestimate the disparity between developer excitement and user apathy.
+
+- :c: Lines of code are only worth counting, when time has come to delete them.
+
+- :c: Sure, it's overkill. But you can never have too much overkill...
+
+- :c: The reason we plan ahead is so that we don't have to do anything right now.
+
+- :c: Don't worry if it doesn't work right. If everything did, you'd be out of a job.
+  :a: Mosher's Law of Software Engineering
+
+- :c: Code is everything I thought poetry was, back when we were in school. Clean, expressive, urgent, all-encompassing. Fourteen lines can open up to fill the available universe.
+  :a: Richard Powers
+
+- :c: I've never written the best code I've ever written.
+
+- :c: The most likely way for the world to be destroyed, most experts agree, is by accident. That's where we come in; we're computer professionals. We cause accidents.
+  :a: Nathaniel Borenstein
+
+- :c: If your bug has a one in a million chance of happening, it'll happen next tuesday.
+
+- :c: The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.
+  :a: Frederick P. Brooks Jr.
+
+- :c: When I have a specific goal in mind and a complicated piece of code to write, I spend my time making it happen rather than telling myself stories about it.
+  :a: Steve Yegge
+
+- :c: Only in wealth, there is room for a bad idea.
+  :a: Jasper van der Meer
+
+- :c: "Team debugging: the act of intimidating a PC into doing for two people what it refuses to do for one."
+
+- :c: I get as much enjoyment from trashing code as I do from scratching it out in the first place!
+
+- :c: It can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible without having to surrender the adequate representation of a single datum of experience.
+  :a: Albert Einstein
+
+- :c: God is a hacker, not an engineer. You can do reverse engineering, but you can’t do reverse hacking.
+  :a: Francis Crick
+
+- :c: All programming is an exercise in caching.
+  :a: Terje Mathisen
+
+- :c: Talk is cheap, show me the code!
+  :a: Linus Torvalds
+
+- :c: |
+    * No technique works if it isn't used.
+    * Ethics change with technology.
+    * "F × S = k" the product of freedom and security is a constant.
+  :a: Niven's laws
+
+- :c: In effect, we conjure the spirits of the computer with our spells.
+  :a: From SICP
+
+- :c: This is important, and a little hard to understand. English is useful because it's a mess. Since English is a mess, it maps well onto the problem space, which is also a mess, which we call reality. Similarly, Perl was designed to be a mess (though in the nicest of possible ways).
+  :a: Larry Wall
+
+- :c: You can have a negative percent chance of succeeding in a task. For example, if you have a -5% chance of succeeding, not only will you fail every time you make an attempt, you will also fail 1 in 20 times that you don't even try.
+
+- :c: Rules are for the obedience of the inexperienced and the guidance of the wise.
+
+- :c: There is a great satisfaction in building good tools for other people to use.
+  :a: Freeman Dyson
+
+- :c: Process is no substitute for synaptic activity.
+  :a: Jeff DeLuca
+
+- :c: If I have not seen as far as others, it is because giants were standing on my shoulders.
+  :a: Hal Abelson
+
+- :c: Every dark corner you haven't explored with your flashlight is full of bugs.
+  :a: Kent Beck and Martin Fowler
+
+- :c: Singleton is a misconcept in OOP unless it's used as a misconcepted paradigm for application development.
+
+- :c: Anyone who has a wife and small kids knows that programming belongs to the easy things in life.
+
+- :c: The goal of Computer Science is to build something that will last at least until we've finished building it.
+
+- :c: Good web applications should look like trifle.
+  :a: Cal Henderson
+
+- :c: The time machine's software will have a recursive main method.
+
+- :c: Behind Every Successful Coder, there'an even more successful De-Coder to understand that Code.
+
+- :c: In the good old days physicists repeated each other's experiments, just to be sure. Today they stick to FORTRAN, so that they can share each other's programs, bugs included.
+  :a: Edsger W. Dijkstra
+
+- :c: Some programmers try to reach higher by standing on other programmers' shoulders. Other programmers try to reach higher by standing on other programmers' toes.
+
+- :c: If our customers wanted a product that worked that way, tell them to purchase a product that works that way.
+
+- :c: It’s hardware that makes a machine fast. It’s software that makes a fast machine slow.
+  :a: Craig Bruce
+
+- :c: If you're going to break it, then break it good. Break everything. Get to the very front of the line. Don't like move up a couple of slots. That's pointless.
+  :a: Anders Hejlsberg
+
+- :c: There are 10 types of people. Those who can read ternary, those who can't and those who mistake it for binary.
+
+- :c: The whole HTML validation exercise is questionable, but validating as XHTML is flat-out masochism. Only recommended for those that enjoy pain. Or programmers. I can't always tell the difference.
+  :a: Jeff Atwood
+
+- :c: You can write software expecting the hardware to be perfect, unfortunately hardware is not perfect and you have to fix it in code.
+  :a: W. Giraud
+
+- :c: A well-written program is its own heaven; a poorly-written program is its own hell.
+  :a: Tao of Programming
+
+- :c: It's hard enough to find an error in your code when you're looking for it; it's even harder when you've assumed your code is error-free.
+  :a: Steve McConnell
+
+- :c: Perspective is worth 80 I.Q. points
+  :a: Alan Kay
+
+- :c: Arrogance in computer science is measured in nano-Dijkstras.
+  :a: Alan Kay
+
+- :c: Design bugs are often subtle and occur by evolution with early assumptions being forgotten as new features or uses are added to a system.
+  :a: Fernando J. Corbató
+
+- :c: Any sufficiently well-documented lisp program contains an ML program in its comments.
+
+- :c: It compiles. Ship it!
+
+- :c: People who find Wiki-markup too difficult to use and need a WYSIWYG-editor shouldn't be using a Wiki in the first place.
+
+- :c: j++; // increment j
+
+- :c: "One Page Principle: A specification that will not fit on one page of 8.5x11 inch paper cannot be understood."
+  :a: Mark Ardis
+
+- :c: Jesus saves but only Buddha makes incremental backups.
+
+- :c: They won't tell you that they don't understand it; they will happily invent their way through the gaps and obscurities.
+  :a: V.A. Vyssotsky on software programmers and their views on specifications
+
+- :c: Software with no bugs is obsolete.
+
+- :c: Computer programmers don't byte, they nibble a bit.
+
+- :c: In software, the most beautiful code, the most beautiful functions, and the most beautiful programs are sometimes not there at all.
+  :a: Jon Bentley
+
+- :c: If it is worth doing once, it is worth automating...
+
+- :c: Anything that can go wrong, will go wrong.
+  :a: Murphy's Law
+
+- :c: Tell me what you need and I'll tell you how to get along without it.
+
+- :c: "The 50-50-90 rule: Anytime you have a 50-50 chance of getting something right, there's a 90% probability you'll get it wrong."
+
+- :c: The whole point of getting things done is knowing what to leave undone. 
+  :a: Oswald Chambers
+
+- :c: I'll try to be nicer if you try to be smarter.
+  :a: Assaf Nitzan
+
+- :c: When a programming language is created that allows programmers to program in simple English, it will be discovered that programmers cannot speak English. 
+
+- :c: One man's constant is another man's variable. 
+  :a: Alan J. Perlis
+
+- :c: |
+   Ready, fire, aim: the fast approach to software development.
+   Ready, aim, aim, aim, aim: the slow approach to software development. 
+
+- :c: Programmer - an organism that turns coffee into software.
+
+- :c: Though a program be but three lines long, someday it will have to be maintained.
+  :a: Tao Of Programming
+
+- :c: Great things are not done by impulse, but by a series of small things brought together.
+  :a: Vincent van Gogh
+
+- :c: When it comes to code it never pays to rush.
+  :a: Marick's Law
+
+- :c: True glory consists in doing what deserves to be written; in writing what deserves to be read.
+  :a: Pliny the Elder
+
+- :c: Don’t fix bugs later; fix them now.
+  :a: Steve Maguire
+
+- :c: Blame doesn't fix bugs.
+
+- :c: I will not be a lemming and follow the crowd over the cliff and into the C.
+  :a: John Beidler
+
+- :c: The C Programming Language — A language which combines the flexibility of assembly language with the power of assembly language.
+
+- :c: C(++) is a write-only, high-level assembler language.
+  :a: Stefan Van Baelen
+
+- :c: As soon as we started programming, we found to our surprise that it wasn't as easy to get programs right as we had thought.
+  :a: Maurice Wilkes
+
+- :c: Any technology that surpasses 50% penetration will never double again (in any number of months).
+  :a: Peter Norvig's law
+
+- :c: I’ve finally learned what ‘upward compatible’ means. It means we get to keep all our old mistakes.
+  :a: Dennie van Tassel
+
+- :c: What happens in the mind of a fine artist is nothing different from that going on in the mind of an expert coder. Both see and thrive in the quintessential nature of patterns.
+  :a: Lawrence Mucheka
+
+- :c: If you don't think you're doing great things, you're probably right.
+
+- :c: Development has two outputs... Code & Bugs
+
+- :c: Errors, like straws, upon the surface flow; He who would search for pearls must dive down below.
+  :a: John Dryden
+
+- :c: I think there's a world market for about five computers.
+  :a: Thomas J Watson Senior, 1945
+
+- :c: There's more than one way to do it.
+  :a: Larry Wall about Perl
+
+- :c: It is often easier to not do something dumb than it is to do something smart.
+
+- :c: Every program attempts to expand until it can read mail. Those programs which cannot so expand are replaced by ones which can.
+  :a: Jamie Zawinski
+
+- :c: As a rule, software systems do not work well until they have been used, and have failed repeatedly, in real applications.
+  :a: Dave Parnas
+
+- :c: The goal is to deliver clean code that works - now.
+  :a: Kent Beck
+
+- :c: ...basically, avoid comments. If your code needs a comment to be understood, it would be better to rewrite it so it's easier to understand.
+  :a: Rob Pike
+
+- :c: The function of good software is to make the complex appear to be simple.
+  :a: Grady Booch
+
+- :c: Intellectuals solve problems; geniuses prevent them.
+  :a: Albert Einstein
+
+- :c: If you don't fail at least 90 percent of the time, you're not aiming high enough.
+  :a: Alan Kay
+
+- :c: "Web Development is a lot like kickboxing: You have to watch your cookies."
+
+- :c: A programmer that is 10 times better than another will probably be happy making only 3 times as much.
+  :a: Paul Graham
+
+- :c: The future will be like the past, because in the past the future was like the past.
+  :a: About estimations
+
+- :c: There's a fine line between being on the leading edge and being in the lunatic fringe.
+  :a: Frank Armstrong
+
