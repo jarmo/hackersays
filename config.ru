@@ -1,2 +1,2 @@
-require './lib/programming-quotes'
-run ProgrammingQuotes
+require './lib/hacker-says'
+run HackerSays

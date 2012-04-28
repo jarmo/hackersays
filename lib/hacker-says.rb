@@ -8,7 +8,7 @@ require "yajl"
 require 'digest/sha1'
 require "./lib/ext/www-middleware"
 
-class ProgrammingQuotes < Sinatra::Base
+class HackerSays < Sinatra::Base
   configure do
     Compass.configuration do |config|
       config.project_path = File.dirname(__FILE__)
