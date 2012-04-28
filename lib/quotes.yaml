@@ -213,3 +213,478 @@
 
 - :c: I love deadlines. I like the whooshing sound they make as they fly by.
   :a: Douglas Adams
+
+- :c: A good programmer looks both ways before crossing a one-way street. 
+
+- :c: Owning a computer without programming is like having a kitchen and using only the microwave oven.
+  :a: Charles Petzold
+
+- :c: The only "intuitive" interface is the nipple. After that it's all learned.
+  :a: Bruce Ediger
+
+- :c: God could create the world in six days because he didn't have to make it compatible with the previous version.
+
+- :c: "We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil."
+  :a: Donald Knuth
+
+- :c: When art critics get together they talk about Form and Structure and Meaning. When artists get together they talk about where you can buy cheap turpentine.
+  :a: Pablo Picasso
+
+- :c: I would love to change the world, but they won't give me the source code.
+
+- :c: If we're supposed to work in Hex, why have we only got A fingers?
+
+- :c: "Programming is like sex: one mistake and you have to support it for the rest of your life."
+  :a: Michael Sinz
+
+- :c: Think twice before you start programming or you will program twice before you start thinking.
+
+- :c: If I had more time, I would have written a shorter letter.
+  :a: Cicero
+
+- :c: "Software is like sex: It's better when it's free."
+  :a: Linus Torvalds
+
+- :c: Profanity is the one language all programmers know best.
+
+- :c: Any sufficiently advanced technology is indistinguishable from magic.
+  :a: Sir Arthur C Clarke
+
+- :c: You start writing code, I'll go see what the customer wants
+
+- :c: Good programmers never write what they can steal or borrow.
+  :a: Jeff Atwood
+
+- :c: Debugging is like farting - it's not so bad when it's your own code.
+
+- :c: When I am working on a problem I never think about beauty. I think only how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong.
+  :a: R. Buckminster Fuller
+
+- :c: If you don't have time to do it right, when will you have time to do it over?
+  :a: John Wooden, basketball coach
+
+- :c: Sufficiently advanced incompetence is indistinguishable from malice.
+  :a: Clark's law
+
+- :c: Don't worry about people stealing your ideas. If it's original, you'll have to ram it down their throats.
+  :a: Howard Aiken
+
+- :c: Saying that Java is good because it works on all platforms is like saying anal sex is good because it works on all genders.
+
+- :c: ... one of the main causes of the fall of the Roman Empire was that, lacking zero, they had no way to indicate successful termination of their C programs.
+  :a: Robert Firth
+
+- :c: Never memorize what you can look up in books.
+  :a: Albert Einstein
+
+- :c: "There are only two hard problems in Computer Science: cache invalidation and naming things."
+  :a: Phil Karlton
+
+- :c: It is easier to optimize correct code than to correct optimized code.
+
+- :c: Software and cathedrals are much the same - first we build them, then we pray.
+
+- :c: |
+    Rules for optimization:
+    1. Don't do it.
+    2. (for experts only) Don't do it yet.
+  :a: Michael A Jackson
+
+- :c: "Confidence, n.: The feeling you have before you understand the situation."
+
+- :c: "There are two major products that come out of Berkeley: LSD and UNIX. We don't believe this to be a coincidence."
+  :a: Jeremy S. Anderson
+
+- :c: Good judgement is the result of experience ... Experience is the result of bad judgement.
+  :a: Fred Brooks
+
+- :c: If architects built houses the way programmers built programs, the first woodpecker to come along would destroy civilization.
+  :a: Gerald Weinberg
+
+- :c: All problems in computer science can be solved with another level of indirection.
+  :a: David Wheeler
+
+- :c: Java is a DSL to transform big Xml documents into long exception stack traces.
+  :a: Scott Bellware
+
+- :c: "There are only two industries that refer to their customers as users: the computer industry and the drug trade."
+  :a: Edward Tufte
+
+- :c: If the code and the comments disagree, then both are probably wrong.
+
+- :c: Man is the best computer we can put aboard a spacecraft...and the only one that can be mass produced with unskilled labor.
+  :a: Wernher von Braun
+
+- :c: I have not failed. I've just found 10,000 ways that won't work.
+  :a: Thomas A. Edison
+
+- :c: When debugging, novices insert corrective code; experts remove defective code.
+  :a: Richard Pattis
+
+- :c: Simplicity is prerequisite for reliability.
+  :a: Edsger Dijkstra
+
+- :c: You can't solve social problems through technical means.
+
+- :c: "Question: How does a large software project get to be one year late? Answer: One day at a time!"
+  :a: Fred Brooks
+
+- :c: Pasting code from the Internet into production code is like chewing gum found in the street.
+
+- :c: One programmer can do in one day what two programmers can do in two.
+
+- :c: Java. The elegant simplicity of C++. The blazing speed of Smalltalk.
+
+- :c: Giving pointers and threads to programmers is like giving whisky and car keys to teenagers.
+  :a: P. J. O'Rourke
+
+- :c: There is not now, nor has there ever been, nor will there ever be, any programming language in which it is the least bit difficult to write bad code.
+
+- :c: Human beings are not accustomed to being perfect, and few areas of human activity demand it. Adjusting to the requirement for perfection is, I think, the most difficult part of learning to program.
+
+- :c: Think of compilation as cooking. Dynamic typing means the steak is juicy and still a little red, like red meat is supposed to be. Static typing means you burnt it to a crisp.
+  :a: Erik Naggum
+
+- :c: It seems to me you can program with discipline or you can program with bondage and discipline. You can't avoid the discipline either way, but bondage appeals to some people.
+  :a: Patrick Logan
+
+- :c: |
+    One who works with their hands is a laborer.
+    One who works with their hands and their mind is a craftsman.
+    One who works with their hands, mind and heart is an artist.
+
+- :c: Nothing is more permanent than a temporary solution.
+  :a: Thomas' First Law
+
+- :c: "Fast, Cheap, Reliable: Pick any two."
+
+- :c: |
+    Make it correct,
+    make it clear,
+    make it concise,
+    make it fast.
+
+    In that order.
+  :a: Wes Dyer
+
+- :c: Must be zero, or equal to MAPI_UNICODE. In either case, however, this parameter is ignored.
+  :a: MSDN
+
+- :c: The best code is no code at all.
+
+- :c: Easy things should be easy and hard things should be possible.
+  :a: Larry Wall
+
+- :c: |
+    How do we convince people that in programming simplicity and clarity —in short: what mathematicians call "elegance"— are not a dispensable luxury, but a crucial matter that decides between success and failure?
+  :a: Edsger W. Dijkstra
+
+- :c: It takes an intelligent person to build something complex; it takes a genius to build something simple.
+
+- :c: Programmers usually have good reasons for making bad decisions.
+
+- :c: Let the code run free, if it needs to be debugged, it will come back.
+
+- :c: If you can't explain something to a six-year-old, you really don't understand it yourself.
+  :a: Albert Einstein
+
+- :c: My programs don't have bugs, they just develop random features.
+
+- :c: In C, its easy to shoot yourself in the foot. C++ makes it more difficult, but when you do, you'll blow your whole leg off.
+  :a: Stroustrup
+
+- :c: Multi-threading is the art of screwing things up before, during or after something else.
+
+- :c: "Programming languages are like girlfriends: The new one is better because you are better."
+
+- :c: When all you have is a hammer, everything starts to look like a nail.
+
+- :c: Engineering is the art of doing with one dollar what any damn fool can do with two.
+  :a: From Space Systems Failures by David M. Harland and Ralph D. Lorenz
+
+- :c: I don't care if it works on your machine! We are not shipping your machine!
+  :a: Ovidiu Platon
+
+- :c: I know it doesn't sound like a big effort, but programmers are really, really lazy, and they like to minimize motion. They'd use feeder tubes if the Health Department would let them.
+  :a: Steve Yegge
+
+- :c: UNIX is user friendly. It just picks whom it wants to be friends with.
+
+- :c: |
+   "It depends" is the answer to all good software engineering questions, but to be a good software engineer, you should know on what it depends, and why.
+
+- :c: You're never done, you just run out of time.
+
+- :c: Program testing can be a very effective way to show the presence of bugs, but is hopelessly inadequate for showing their absence.
+  :a: Edsger Dijkstra
+
+- :c: The competent programmer is fully aware of the limited size of his own skull. He therefore approaches his task with full humility, and avoids clever tricks like the plague.
+  :a: Edsger Dijkstra
+
+- :c: Good design adds value faster than it adds cost.
+  :a: Thomas C. Gale
+
+- :c: |
+    With all due respect John, I am the head of IT and I have it on good authority. If you type "Google" into Google, you can break the Internet.
+  :a: |
+    Jen, "The IT Crowd"
+
+- :c: The two most common elements in the universe are hydrogen and stupidity.
+  :a: Harlan Ellison
+
+- :c: There is no IRL, only AFK
+
+- :c: A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.
+  :a: Douglas Adams
+
+- :c: A C program is like a fast dance on a newly waxed dance floor by people carrying razors.
+  :a: Waldi Ravens
+
+- :c: God did not create the world in seven days; for six days he screwed around and then pulled an all-nighter.
+
+- :c: if you are a programmer working in 2003 and you don't know the basics of characters, character sets, encodings, and Unicode, and I catch you, I'm going to punish you by making you peel onions for 6 months in a submarine.
+  :a: Joel Spolsky
+
+- :c: |
+    If we'd asked the customers what they wanted, they would have said "faster horses".
+  :a: Henry Ford
+
+- :c: |
+    The word “experienced” often refers to someone who’s gotten away with doing the wrong thing more frequently than you have.
+  :a: Laurence Gonzales
+
+- :c: Real Programmers don't comment their code. If it was hard to write, it should be hard to understand.
+
+- :c: |
+   'Goto' is always evil, like in 'goto school' or 'goto work'.
+
+- :c: Your code is both good and original. Unfortunately the parts that are good are not original, and the parts that are original are not good.
+
+- :c: They did not know it was impossible, so they did it! 
+  :a: Mark Twain
+
+- :c: I (...) am rarely happier than when spending an entire day programming my computer to perform automatically a task that would otherwise take me a good ten seconds to do by hand. 
+  :a: Douglas Adams
+
+- :c: People who are really serious about software should make their own hardware.
+  :a: Alan Kay
+
+- :c: "Consider the postage stamp: its usefulness consists in the ability to stick to one thing until it gets there."
+  :a: Josh Billings
+
+- :c: Don't tell people how to do things, tell them what to do and let them surprise you with their results.
+  :a: George S. Patton
+
+- :c: Multitasking is the art of distracting yourself from two things you’d rather not be doing by doing them simultaneously.
+
+- :c: Code never lies, comments sometimes do.
+  :a: Ron Jeffries
+
+- :c: A computer programmer is a device for turning coffee into bugs.
+  :a: Bram Moolenaar
+
+- :c: Any sufficiently advanced bug is indistinguishable from a feature.
+  :a: Rich Kulawiec
+
+- :c: From a programmer's point of view, the user is a peripheral that types when you issue a read request.
+  :a: Peter Williams
+
+- :c: Should array indices start at 0 or 1? My compromise of 0.5 was rejected without, I thought, proper consideration.
+  :a: Stan Kelly-Bootle
+
+- :c: God is Real, unless declared Integer.
+
+- :c: We all agree on the necessity of compromise. We just can't agree on when it's necessary to compromise.
+  :a: Larry Wall
+
+- :c: And don't tell me there isn't one bit of difference between null and space, because that's exactly how much difference there is.
+  :a: Larry Wall
+
+- :c: It won't be covered in the book. The source code has to be useful for something, after all...
+  :a: Larry Wall
+
+- :c: Just don't create a file called -rf.
+  :a: Larry Wall
+
+- :c: Sex is fun, but it probably doesn't solve all your problems.
+  :a: Larry Wall
+
+- :c: My assertion that we can do better with computer languages is a persistent belief and fond hope, but you'll note I don't actually claim to be either rational or right. Except when it's convenient.
+  :a: Larry Wall
+
+- :c: People who deal with bits should expect to get bitten.
+  :a: Jon Bentley
+
+- :c: All parts should go together without forcing. You must remember that the parts you are reassembling were disassembled by you. Therefore, if you can't get them together again, there must be a reason. By all means, do not use a hammer.
+  :a: IBM Manual, 1925
+
+- :c: There is nothing quite so permanent as a quick fix.
+
+- :c: Shipping is a feature.
+  :a: Richard Campbell
+
+- :c: If C didn't exist, we would be programming in OBOL, PASAL or BASI
+
+- :c: The Internet? Is that thing still around?
+  :a: Homer Simpson
+
+- :c: They have computers, and they may have other weapons of mass destruction.
+  :a: Janet Reno
+
+- :c: Only Half of programming is coding. The other 90% is debugging.
+
+- :c: Now I'm a pretty lazy person and am prepared to work quite hard in order to avoid work.
+  :a: Martin Fowler
+
+- :c: What I cannot build, I do not understand.
+  :a: Richard Feynman
+
+- :c: First, solve the problem. Then, write the code.
+  :a: John Johnson
+
+- :c: Artificial Intelligence is no match for natural stupidity.
+
+- :c: The more bizarre the behavior, the more stupid the mistake.
+  :a: Ed's Law of Debugging
+
+- :c: There are no significant bugs in our released software that any significant number of users want fixed.
+  :a: Bill Gates
+
+- :c: Yes, sometimes Perl looks like line noise to the uninitiated, but to the seasoned Perl programmer, it looks like checksummed line noise with a mission in life.
+  :a: Randal Schwartz
+
+- :c: Any problem in computer science can be solved with another layer of indirection. But that usually will create another problem.
+  :a: David Wheeler
+
+- :c: In my experience, one of the most significant problems in software development is assuming. If you assume a method will passed the right parameter value, the method will fail.
+  :a: Paul M. Duvall
+
+- :c: The sooner we start coding fewer frameworks and more programs the sooner we’ll become better programmers.
+  :a: Warped Java Guy Elementary Java Solutions
+
+- :c: Starting a startup is hard, but having a 9 to 5 job is hard too, and in some ways a worse kind of hard.
+  :a: Paul Graham
+
+- :c: In essence, let the market design the product. 
+  :a: Paul Graham
+
+- :c: A startup now can be just a pair of 22 year old guys. A company like that can move much more easily than one with 10 people, half of whom have kids.
+  :a: Paul Graham
+
+- :c: Startups almost never get it right the first time. Much more commonly you launch something, and no one cares. Don’t assume when this happens that you’ve failed. That’s normal for startups. But don’t sit around doing nothing. Iterate. 
+  :a: Paul Graham
+
+- :c: The key to performance is elegance, not battalions of special cases.
+  :a: Jon Bentley and Doug McIlroy
+
+- :c: You’ll spend far more time babysitting old technologies than implementing new ones.
+  :a: Jason Hiner IT Dirty Secrets
+
+- :c: No one hates software more than software developers.
+  :a: Jeff Atwood
+
+- :c: I was a C++ programmer before I started designing Ruby. I programmed in C++ exclusively for two or three years. And after two years of C++ programming, it still surprised me.
+  :a: Matz
+
+- :c: Good architecture is necessary to give programs enough structure to be able to grow large without collapsing into a puddle of confusion.
+  :a: Douglas Crockford
+
+- :c: Programming is difficult. At its core, it is about managing complexity. Computer programs are the most complex things that humans make. Quality is illusive and elusive.
+  :a: Douglas Crockford
+
+- :c: Code reuse is the Holy Grail of Software Engineering. 
+  :a: Douglas Crockford
+
+- :c: The structure of software systems tend to reflect the structure of the organization that produce them.
+  :a: Douglas Crocford
+
+- :c: I went to school to learn how to program software applications, which inevitably have bug defects. There was no course at my university on testing, debugging, profiling, or optimization. These things you have to learn on your own, usually in a tight deadline.
+  :a: Juixe TechKnow
+
+- :c: To most Java developers, Ruby/Rails is like a mistress. Ruby/Rails is young, new, and exciting; but eventually we go back to old faithful, dependable, and employable Java with some new tricks and idioms and we are the better programmer for it. 
+  :a: Juixe TechKnow
+
+- :c: You might as well pay your customers 50K because they are just your QA.
+  :a: Juixe TechKnow
+
+- :c: You can't eliminate problems, but you can make trades to get problems that you prefer over the ones you have now.
+  :a: Eric Sink’s Axiom of Software Development
+
+- :c: "Manually managing blocks of memory in C is like juggling bars of soap in a prison shower: It's all fun and games until you forget about one of them."
+
+- :c: If it doesn't work, it doesn't matter how fast it doesn't work.
+  :a: Ravera's observation on premature optimization
+
+- :c: Any set of procedures, no matter how well intentioned or useful, that are too difficult to follow, will be circumvented.
+  :a: Ravera's First Law of System Administration
+
+- :c: Deleted code is debugged code.
+  :a: Jeff Sickel
+
+- :c: All programs have at least one bug remaining and can be optimized by one byte. Thus, by mathematical induction, all programs can be reduced to one byte. And it won't work.
+
+- :c: The sooner you get behind in your work, the more time you have to catch up.
+
+- :c: It’s hard to read through a book on the principles of magic without glancing at the cover periodically to make sure it isn’t a book on software design.
+  :a: Bruce Tognazzini
+
+- :c: Java is like a variant of the game of Tetris in which none of the pieces can fill gaps created by the other pieces, so all you can do is pile them up endlessly.
+  :a: Steve Yegge
+
+- :c: Software is hard.
+  :a: Donald Knuth
+
+- :c: Designing software in a team is like writing poetry in a committee meeting.
+  :a: Joel Spolsky
+
+- :c: Education is the process of learning more and more about less and less until one knows everything about nothing and is entitled to call oneself 'Doctor'.
+
+- :c: |
+   You have to "solve" the problem once in order to clearly define it and then solve it again to create a solution that works.
+
+- :c: A logician trying to explain logic to a programmer is like a cat trying to explain to a fish what it's like to get wet.
+
+- :c: Documentation is like sex. When it's good, it's fantastic. When it's bad, it's still better than nothing.
+
+- :c: "Three things should never be seen in the process of being created: laws, sausage, and software."
+
+- :c: "I have found that the reason a lot of people are interested in artificial intelligence is the same reason a lot of people are interested in artificial limbs: they are missing one."
+  :a: David Parnas
+
+- :c: On the 7th day ... God began debugging.
+
+- :c: If we can't fix it, then it ain't broke.
+  :a: Jon Bentley
+
+- :c: Every truth passes through three stages before it is recognized. In the first, it is ridiculed, in the second it is opposed, in the third it is regarded as self-evident.
+  :a: Arthur Schopenhauer
+
+- :c: Fight code entropy.
+  :a: John Carmack
+
+- :c: The cheapest, fastest, and most reliable components are those that aren't there.
+  :a: Gordon Bell
+
+- :c: |
+   Good programmers learn more from "That's not what I expected!" than from getting it right the first time.
+
+- :c: Computers are useless. They can only give you answers.
+  :a: Pablo Picasso
+
+- :c: For every complex problem there is an answer that is clear, simple, and wrong.
+  :a: H L Mencken
+
+- :c: When you want to do something differently from the rest of the world, it's a good idea to look into whether the rest of the world knows something you don't.
+
+- :c: If you require information, do not free memory containing the information.
+  :a: MSDN
+
+- :c: Part of the inhumanity of the computer is that, once it is competently programmed and working smoothly, it is completely honest.
+  :a: Isaac Asimov
+
+- :c: Simplicity is the ultimate sophistication.
+  :a: Leonardo da Vinci
+
+- :c: Anything that can go wrong will go wrong, anything that can't go wrong will go wrong anyway.
+
+- :c: Code is never finished, only abandoned.
