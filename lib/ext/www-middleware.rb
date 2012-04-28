@@ -6,7 +6,7 @@ class WwwMiddleware
   def call(env)
     request = Rack::Request.new(env)
     if request.host =~ /heroku|programming-quotes/
-      [301, {"Location" => "hackersays.com"}, self]
+      [301, {"Location" => "http://hackersays.com"}, self]
     elsif request.host[0..3] == "www."
       [301, {"Location" => request.url.sub("//www.", "//")}, self]
     else
