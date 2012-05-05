@@ -40,7 +40,7 @@ class HackerSays < Sinatra::Base
   end
 
   def random_quote
-    quote quotes.keys.sample
+    quote quotes.keys[rand quotes.size]
   end
 
   def quote(id)
