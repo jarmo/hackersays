@@ -48,6 +48,26 @@ body[data-theme=vim] {
     margin-left: 15px;
   }
   
+  #themes {
+    $frame-top: 37px;
+    margin-top: -$frame-top;
+    ul { top: $frame-top; }
+    line-height: 12px;
+    
+    $line: "-------------------";
+    
+    &:before {
+      display: block;
+      content: "#{$line}\D\A:set colorscheme\D\A#{$line}";
+      color: $light;
+      white-space: pre;
+    }
+    ul:after {
+      display: block;
+      content: $line; color: $light;
+    }
+  }
+  
   #quote {
     width: 80%;
     padding-top: 15%;
@@ -80,6 +100,7 @@ body[data-theme=vim] {
       display: block;
       text-align: right;
       color: $light;
+      font-style: italic;
       
       &:before { content: "// "; }
     }
