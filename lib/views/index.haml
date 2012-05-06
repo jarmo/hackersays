@@ -10,7 +10,7 @@
     %script(type="text/javascript" src="script.js")
     
     :javascript
-      var CURRENT_QUOTE = #{Yajl::Encoder.encode @quote};
+      var $currentQuote = #{Yajl::Encoder.encode @quote};
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-12994604-4']);
