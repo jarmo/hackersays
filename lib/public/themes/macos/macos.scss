@@ -47,19 +47,16 @@ body[data-theme=macos] {
   }
 
   #tagline {
-    margin-top: 14px;
+    margin-top: 34px;
     margin-left: 15px;
     
-    $bg: white;
     p {
-      background: darken($bg, 20%);
+      background: white;
       display: inline;
       padding: 3px 5px;
       line-height: 18px;
       &:after { content: "\D\A"; white-space: pre; }
-      @include single-transition(background, 300ms, ease-in-out);
     }
-    &:hover p { background: $bg; }
   }
 
   #themes {
