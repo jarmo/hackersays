@@ -1,4 +1,5 @@
 @import "compass/typography/text";
+@import "compass/css3/transition";
 
 body[data-theme=sepia] {
   min-width: 600px;
@@ -23,8 +24,10 @@ body[data-theme=sepia] {
     }
     h1 a {
       display: block;
+      position: relative;
       @include replace-text-with-dimensions("sepia/sepia-logo.png");
-      &:hover { position: relative; top: -3px; }
+      &:hover { top: -3px; }
+      @include single-transition(top, 300ms, ease-in-out);
     }
     
     .share {
