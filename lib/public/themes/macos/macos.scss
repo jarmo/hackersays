@@ -127,6 +127,7 @@ body[data-theme=macos] {
       background: white;
       float: right;
     }
+    &:after { content: ""; display: block; clear: both; }
   }
 
   // For header's rounded corners to show black and not body's grid.
