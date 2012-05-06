@@ -3,7 +3,8 @@
   %head
     %title Hacker Says
     %link(rel="stylesheet" type="text/css" href="themes/base.css")
-    %link(rel="stylesheet" type="text/css" href="themes/sepia/sepia.css")
+    - themes.each do |theme|
+      %link(rel="stylesheet" type="text/css" href="themes/#{theme}/#{theme}.css")
     
     %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
     %script(type="text/javascript" src="jquery.history-v1.7.1-r2.js")
@@ -23,7 +24,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
       
-  %body.sepia
+  %body.twitter
     #header
       %h1
         %a(href="/") Hacker Says

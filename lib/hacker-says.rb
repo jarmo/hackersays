@@ -69,6 +69,13 @@ class HackerSays < Sinatra::Base
     haml :index
   end
 
-  run! if app_file == $0
+  helpers do
+    def themes
+      Dir.glob(File.join(settings.public_folder, "themes", "*/")).map {|d|
+        File.basename(d.sub(/\/$/, ""))
+      }
+    end
+  end
 
+  run! if app_file == $0
 end

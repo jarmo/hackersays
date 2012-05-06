@@ -1,0 +1,95 @@
+@import "compass/typography/text";
+
+body.twitter {
+  $dark: #142a36;
+  $light: #889396;
+  $link: #558ad0;
+  
+  min-width: 600px;
+  background: $dark;
+  font: 12px Menlo, Courier, monospace;
+  color: $light;
+  
+  p a {
+    color: $link;
+    text-decoration: underline;
+    &:hover { background: $link; color: white; text-decoration: none; }
+  }
+
+  #header {
+    $h: 36px;
+    
+    padding: 0 40px;
+    height: $h; line-height: $h;
+    font: 12px Monaco, Courier, monospace;
+    background: $light;
+    color: $dark;
+    overflow: hidden;
+
+    h1 {
+      font-size: 17px; line-height: $h; float: left;
+      a:before { content: ".oO ["; }
+      a:after { content: "]"; }
+      a:hover { background: $link; color: white; text-decoration: none; }
+    }
+
+    .share {
+      float: right; line-height: $h;
+    }
+  
+    p a {
+      color: black;
+      &:hover { color: white; }
+    }
+  }
+    
+  #tagline {
+    margin-top: 14px;
+    margin-left: 15px;
+  }
+  
+  #quote {
+    width: 80%;
+    padding-top: 15%;
+    max-width: 570px;
+    margin: 0 auto;
+    padding-left: 30px;
+    
+    font-family: Monaco, Courier, monospace;
+
+    p {
+      color: #fbf6e4;
+      font-size: 30px;
+    }
+    p:before {
+      float: left;
+      display: inline-block;
+      vertical-align: top;
+      $w: 50px; width: $w; margin-right: -$w;
+      margin-top: -27px;
+      margin-left: -123px; 
+      content: "\201C";
+      
+      font-size: 150px;
+      color: $light;
+    }
+    
+    cite {
+      margin-top: 30px;
+      font-size: 22px;
+      display: block;
+      text-align: right;
+      color: $light;
+      
+      &:before { content: "// "; }
+    }
+  }
+
+  #share {
+    width: 80%;
+    max-width: 570px;
+    margin: 50px auto 0;
+    padding-left: 30px;
+    .button { display: inline-block; vertical-align: top; }
+  }
+}
