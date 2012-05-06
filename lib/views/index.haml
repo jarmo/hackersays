@@ -2,7 +2,8 @@
 %html
   %head
     %title Hacker Says
-    %link(rel="stylesheet" type="text/css" href="style.css")
+    %link(rel="stylesheet" type="text/css" href="themes/base.css")
+    %link(rel="stylesheet" type="text/css" href="themes/sepia/sepia.css")
     
     %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
     %script(type="text/javascript" src="jquery.history-v1.7.1-r2.js")
@@ -22,12 +23,28 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
       
-  %body
-    #fb-root
-    #container
-      #tweet-button
-      #fb-button
-      %blockquote
-        %p.quote &#8220;
-        %p.content
-        %p.author
+  %body.sepia
+    #header
+      %h1
+        %a(href="/") Hacker Says
+      %p.share
+        %a(href="https://github.com/jarmo/hackersays/issues") Submit Your Quote
+        or
+        %a(href="https://github.com/jarmo/hackersays") Fork for Theming
+
+    #tagline
+      %p.tagline
+        Best programming and hacker quotes. Ever.
+      %p.by
+        Curated by fellow hackers
+        %a(href="http://itreallymatters.net") Jarmo
+        %span.amp &
+        %a(href="http://themoll.com") Andri
+
+    %blockquote#quote
+      %p
+      %cite
+          
+    #share
+      .button#tweet-button
+      .button#fb-button

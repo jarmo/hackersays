@@ -6,18 +6,19 @@ require "compass"
 require "yaml"
 require "yajl"
 require 'digest/sha1'
-require "./lib/ext/www-middleware"
+require File.expand_path("../ext/www-middleware", __FILE__)
 
 class HackerSays < Sinatra::Base
   configure do
     Compass.configuration do |config|
-      config.project_path = File.dirname(__FILE__)
-      config.sass_dir = 'views'
+      config.project_path = public_folder
+      config.images_dir = "themes"
       config.output_style = :compressed
     end
 
     set :haml, {:format => :html5}
-    set :scss, Compass.sass_engine_options
+    set :scss, Compass.sass_engine_options.
+      merge(:views => File.join(public_folder, "themes"))
     use WwwMiddleware
   end
 
@@ -53,9 +54,14 @@ class HackerSays < Sinatra::Base
     Yajl::Encoder.encode random_quote
   end
 
-  get '/style.css' do
+  get '/themes/base.css' do
     content_type 'text/css', :charset => 'utf-8'
-    scss :style
+    scss :base
+  end
+  
+  get '/themes/:theme/*.css' do
+    content_type 'text/css', :charset => 'utf-8'
+    scss "#{params[:theme]}/#{params[:theme]}".to_sym
   end
 
   get '/:id?' do
