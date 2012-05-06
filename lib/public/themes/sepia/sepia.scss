@@ -57,12 +57,7 @@ body[data-theme=sepia] {
   }
 
   #quote {
-    width: 80%;
-    padding-top: 15%;
-    max-width: 570px;
-    margin: 0 auto;
-    padding-left: 30px;
-    
+    @include quote-in-center;
     font-family:
       American Typewriter, "Courier Bold", Courier,
       Georgia, Times, "Times New Roman", monospace;

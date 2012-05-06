@@ -10,3 +10,11 @@
   content: "\201C";
   font-size: 150px;
 }
+
+@mixin quote-in-center {
+  width: 80%;
+  padding-top: 18%;
+  max-width: 570px;
+  margin: 0 auto;
+  padding-left: 30px;
+}

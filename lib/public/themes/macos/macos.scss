@@ -92,12 +92,8 @@ body[data-theme=macos] {
   }
 
   #quote {
-    width: 80%;
-    padding-top: 15%;
-    max-width: 570px;
-    margin: 0 auto;
+    @include quote-in-center;
     padding-left: 70px;
-    
     font-family: Times, serif;
     font-weight: normal;
     
