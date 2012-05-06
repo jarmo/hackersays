@@ -1,3 +1,4 @@
+@import "helpers";
 @import "compass/typography/text";
 
 body[data-theme=vim] {
@@ -64,7 +65,8 @@ body[data-theme=vim] {
     }
     ul:after {
       display: block;
-      content: $line; color: $light;
+      content: $line;
+      color: $light;
     }
   }
   
@@ -82,15 +84,9 @@ body[data-theme=vim] {
       font-size: 30px;
     }
     p:before {
-      float: left;
-      display: inline-block;
-      vertical-align: top;
-      $w: 50px; width: $w; margin-right: -$w;
+      @include quote-for-before;
       margin-top: -27px;
       margin-left: -123px; 
-      content: "\201C";
-      
-      font-size: 150px;
       color: $light;
     }
     

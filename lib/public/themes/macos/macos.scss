@@ -1,0 +1,124 @@
+@import "helpers";
+@import "compass/css3/border-radius";
+
+$light: #9d9d9d;
+
+body[data-theme=macos] {
+  min-width: 600px;
+  background: image-url("macos/macos-bg.png") #6c6c6c;
+  font: bold 12px Lucida Grande, Verdana, sans;
+  color: $light;
+  
+  p a {
+    color: black;
+    text-decoration: underline;
+    &:hover { background: black; color: white; text-decoration: none; }
+  }
+  
+  #header {
+    $h: 34px;
+    padding: 0 40px;
+    height: $h; line-height: $h;
+    overflow: hidden;
+    background: white;
+    border-bottom: 1px solid black;
+    @include border-top-radius(7px);
+    
+    h1 {
+      font-size: 17px; line-height: $h; float: left;
+      color: black;
+      
+      a:before {
+        content: "";
+        display: inline-block;
+        $logo: "macos/macos-logo.png";
+        width: image-width($logo); height: image-height($logo);
+        margin-right: 10px;
+        position: relative; top: 2px;
+        background: image-url($logo) center no-repeat;
+      }
+    }
+    
+    .share {
+      float: right; line-height: $h;
+    }
+  }
+
+  #tagline {
+    margin-top: 14px;
+    margin-left: 15px;
+    //p { background: #dbdbdb; }
+  }
+
+  #themes {
+    background: black;
+    
+    $frame-top: 37px;
+    margin-top: -$frame-top;
+    ul { top: $frame-top; }
+    
+    &:before {
+      display: block;
+      content: "Look 'n' Feel";
+      color: $light;
+      white-space: pre;
+    }
+    
+    ul {
+      background: image-url("macos/macos-dialog-bg.png") white;
+    }
+  }
+
+  #quote {
+    width: 80%;
+    padding-top: 15%;
+    max-width: 570px;
+    margin: 0 auto;
+    padding-left: 70px;
+    
+    font-family: Times, serif;
+    font-weight: normal;
+    
+    p {
+      color: black;
+      font-size: 30px;
+      border-top: 15px solid white;
+      border-left: 30px solid white;
+      padding-bottom: 15px;
+      text-align: justify;
+      
+      span {
+        line-height: 30px;
+        background: white; padding: 0 15px 15px 0;
+      }
+    }
+    p:before {
+      @include quote-for-before;
+      padding: 0;
+      color: $light;
+      background: white;
+      margin-left: -130px;
+      margin-top: -15px;
+      padding: 0 30px;
+      line-height: 150px;;
+      height: 85px;
+    }
+
+    cite {
+      margin-top: 30px;
+      font-size: 22px;
+      display: inline-block;
+      padding: 15px 20px;
+      background: white;
+      float: right;
+    }
+  }
+
+  // For header's rounded corners to show black and not body's grid.
+  &:before {
+    height: 10px; margin-bottom: -10px;
+    background: black;
+    content: "";
+    display: block;
+  }
+}

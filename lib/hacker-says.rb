@@ -12,6 +12,7 @@ class HackerSays < Sinatra::Base
   configure do
     Compass.configuration do |config|
       config.project_path = public_folder
+      config.sass_dir = "themes"
       config.images_dir = "themes"
       config.output_style = :compressed
     end

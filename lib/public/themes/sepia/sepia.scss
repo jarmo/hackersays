@@ -1,3 +1,4 @@
+@import "helpers";
 @import "compass/typography/text";
 @import "compass/css3/transition";
 
@@ -70,18 +71,10 @@ body[data-theme=sepia] {
       font-size: 30px;
     }
     p:before {
-      float: left;
-      display: inline-block;
-      vertical-align: top;
-      $w: 50px; width: $w; margin-right: -$w;
-      margin-top: -35px;
-      margin-left: -90px; 
-      content: "\201C";
-      
-      font-size: 150px;
+      @include quote-for-before;
       color: #aaa790;
     }
-    
+
     cite {
       margin-top: 30px;
       font-size: 22px;

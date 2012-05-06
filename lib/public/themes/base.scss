@@ -18,17 +18,17 @@ strong   { font-weight: bolder; }
     text-align: right;
     min-width: 100px;
     opacity: 0.5;
-
+    
     li {
       display: inline-block;
       & + li { margin-left: 5px; }
+  
+      a {
+        cursor: pointer;
+        img { border: 1px solid rgba(black, .5); }
+      }
     }
   }
   &:hover { opacity: 1; }
   &:hover ul { opacity: 1; }
-  
-  a {
-    cursor: pointer;
-    img { border: 1px solid rgba(black, .5); }
-  }
 }

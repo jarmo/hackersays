@@ -1,0 +1,12 @@
+@mixin quote-for-before {
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  $w: 50px; width: $w; margin-right: -$w;
+  
+  // sane defaults:
+  margin-top: -35px;
+  margin-left: -90px; 
+  content: "\201C";
+  font-size: 150px;
+}
