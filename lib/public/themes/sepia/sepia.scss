@@ -1,0 +1,79 @@
+@import "compass/typography/text";
+
+body.sepia {
+  min-width: 600px;
+  background: image-url("sepia/sepia-bg.png") #e1dbc3;
+  font: 15px Times, Georgia, serif;
+  color: #726e57;
+  
+  p a {
+    color: #b1551e;
+    text-decoration: underline;
+    &:hover { background: #b1551e; color: white; text-decoration: none; }
+  }
+
+  #header {
+    $top-air: 15px;
+    padding: $top-air 40px 0;
+    
+    h1 {
+      float: left;
+      margin-top: -$top-air;
+      margin-right: 25px;
+    }
+    h1 a {
+      display: block;
+      @include replace-text-with-dimensions("sepia/sepia-logo.png");
+      &:hover { position: relative; top: -3px; }
+    }
+    
+    .share {
+      float: right;
+    }
+  }
+
+  #quote {
+    width: 80%;
+    padding-top: 15%;
+    max-width: 570px;
+    margin: 0 auto;
+    padding-left: 30px;
+    
+    font-family:
+      American Typewriter, "Courier Bold", Courier,
+      Georgia, Times, "Times New Roman", monospace;
+
+    p {
+      color: #4e4b38;
+      font-size: 30px;
+    }
+    p:before {
+      float: left;
+      display: inline-block;
+      vertical-align: top;
+      $w: 50px; width: $w; margin-right: -$w;
+      margin-top: -35px;
+      margin-left: -90px; 
+      content: "\201C";
+      
+      font-size: 150px;
+      color: #aaa790;
+    }
+    
+    cite {
+      margin-top: 30px;
+      font-size: 22px;
+      display: block;
+      text-align: right;
+      color: #817f6b;
+    }
+  }
+
+  #share {
+    width: 80%;
+    max-width: 570px;
+    margin: 50px auto 0;
+    padding-left: 30px;
+    .button { display: inline-block; vertical-align: top; }
+  }
+}

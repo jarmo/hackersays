@@ -11,7 +11,8 @@ require File.expand_path("../ext/www-middleware", __FILE__)
 class HackerSays < Sinatra::Base
   configure do
     Compass.configuration do |config|
-      config.project_path = File.dirname(__FILE__)
+      config.project_path = public_folder
+      config.images_dir = "themes"
       config.output_style = :compressed
     end
 

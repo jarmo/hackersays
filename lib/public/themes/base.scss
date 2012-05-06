@@ -1,39 +1,8 @@
 @import "compass/reset";
-@import "compass/css3/images";
-
+@import "compass/css3/box-sizing";
 html { min-height: 100%; }
-
-body {
-  background-color: #425370;
-  @include background-image(linear-gradient(#425370, #fff));
-  color: #353535;
-  font: 2.6em / 1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-blockquote {
-  font-weight: bold;
-  margin-top: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px;
-  display: none;
-}
-
-.content {
-  font-size: 32px;
-  line-height: 1.2;
-}
-
-.quote {
-  font-size: 250px;
-  float: left;
-  margin-top: -93px;
-  padding-right: 10px;
-}
-
-.author {
-  text-align: right;
-  font-size: 20px;
-  color: #454545;
-  &:before { content: '\2014    '; }
-}
+body { background-color: white; color: black; }
+blockquote { display: none; }
+a { color: inherit; text-decoration: inherit; outline: 0; }
+strong   { font-weight: bolder; }
+* { @include box-sizing(border-box); }
