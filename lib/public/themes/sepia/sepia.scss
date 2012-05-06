@@ -43,14 +43,9 @@ body[data-theme=sepia] {
     
     $frame-top: 40px;
     $frame-right: 40px;
-    margin-top: -$frame-right;
-    margin-right: -$frame-right;
-    padding: 20px 40px 0 20px;
-
-    ul {
-      top: $frame-top;
-      right: $frame-right;
-    }
+    margin-top: -$frame-top; margin-right: -$frame-right;
+    ul { top: $frame-top; right: $frame-right; }
+    padding-top: 17px; padding-left: 15px;
 
     &:before {
       display: block;
