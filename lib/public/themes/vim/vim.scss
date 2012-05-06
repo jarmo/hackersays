@@ -1,6 +1,6 @@
 @import "compass/typography/text";
 
-body.twitter {
+body[data-theme=vim] {
   $dark: #142a36;
   $light: #889396;
   $link: #558ad0;

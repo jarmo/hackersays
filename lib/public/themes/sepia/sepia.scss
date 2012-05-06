@@ -1,6 +1,6 @@
 @import "compass/typography/text";
 
-body.sepia {
+body[data-theme=sepia] {
   min-width: 600px;
   background: image-url("sepia/sepia-bg.png") #e1dbc3;
   font: 15px Times, Georgia, serif;
@@ -29,6 +29,30 @@ body.sepia {
     
     .share {
       float: right;
+    }
+  }
+
+  #themes {
+    $img: "sepia/sepia-themes.png";
+    min-width: image-width($img);
+    min-height: image-height($img);
+    background: image-url($img) right top no-repeat;
+    
+    $frame-top: 40px;
+    $frame-right: 40px;
+    margin-top: -$frame-right;
+    margin-right: -$frame-right;
+    padding: 20px 40px 0 20px;
+
+    ul {
+      top: $frame-top;
+      right: $frame-right;
+    }
+
+    &:before {
+      display: block;
+      color: #4e4b38;
+      content: "Other looks for sale!"
     }
   }
 
