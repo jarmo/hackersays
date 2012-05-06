@@ -1,5 +1,7 @@
 @import "helpers";
 @import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/transition";
 
 $light: #9d9d9d;
 
@@ -47,25 +49,45 @@ body[data-theme=macos] {
   #tagline {
     margin-top: 14px;
     margin-left: 15px;
-    //p { background: #dbdbdb; }
+    
+    $bg: white;
+    p {
+      background: darken($bg, 20%);
+      display: inline;
+      padding: 3px 5px;
+      line-height: 18px;
+      &:after { content: "\D\A"; white-space: pre; }
+      @include single-transition(background, 300ms, ease-in-out);
+    }
+    &:hover p { background: $bg; }
   }
 
   #themes {
     background: black;
+    &, ul { opacity: 1; }
     
-    $frame-top: 37px;
-    margin-top: -$frame-top;
-    ul { top: $frame-top; }
+    @include border-radius(7px);
+    $frame-top: 20px + 3px;
+    $frame-right: 6px;
+    margin-top: -$frame-top; margin-right: -$frame-right;
+    padding: 0 2px 2px 1px;
+
+    
+    ul {
+      padding: 3px 4px 0 3px;
+      background: image-url("macos/macos-dialog-bg.png") white;
+      @include border-radius(5px);
+
+      li { @include box-shadow(black 1px 1px); }
+      img { border-color: black; }
+    }
     
     &:before {
       display: block;
       content: "Look 'n' Feel";
-      color: $light;
-      white-space: pre;
-    }
-    
-    ul {
-      background: image-url("macos/macos-dialog-bg.png") white;
+      color: white;
+      height: 20px; line-height: 20px;
+      padding: 0 10px;
     }
   }
 

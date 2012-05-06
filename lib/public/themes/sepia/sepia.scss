@@ -42,16 +42,17 @@ body[data-theme=sepia] {
     min-height: image-height($img);
     background: image-url($img) right top no-repeat;
     
-    $frame-top: 40px;
+    $frame-top: 17px + 23px;
     $frame-right: 40px;
     margin-top: -$frame-top; margin-right: -$frame-right;
-    ul { top: $frame-top; right: $frame-right; }
-    padding-top: 17px; padding-left: 15px;
+    ul { right: $frame-right; }
+    padding-top: 17px; padding-left: 15px; padding-right: $frame-right;
 
     &:before {
       display: block;
       color: #4e4b38;
-      content: "Other looks for sale!"
+      content: "Other looks for sale!";
+      height: 23px;
     }
   }
 

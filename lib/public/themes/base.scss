@@ -14,13 +14,13 @@ strong   { font-weight: bolder; }
   &, ul { @include single-transition(opacity, 300ms, ease-in-out); }
 
   ul {
-    position: absolute; top: 0; right: 0;
     text-align: right;
     min-width: 100px;
     opacity: 0.5;
     
     li {
       display: inline-block;
+      height: 30px;
       & + li { margin-left: 5px; }
   
       a {

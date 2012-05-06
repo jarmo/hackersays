@@ -50,9 +50,8 @@ body[data-theme=vim] {
   }
   
   #themes {
-    $frame-top: 37px;
+    $frame-top: 36px;
     margin-top: -$frame-top;
-    ul { top: $frame-top; }
     line-height: 12px;
     
     $line: "-------------------";
