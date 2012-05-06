@@ -19,3 +19,12 @@
   padding-left: 30px;
   margin-bottom: 30px;
 }
+
+@mixin share-in-center {
+  width: 80%;
+  max-width: 570px;
+  margin: 50px auto 0;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  .button { display: inline-block; vertical-align: top; }
+}

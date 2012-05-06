@@ -80,11 +80,5 @@ body[data-theme=sepia] {
     }
   }
 
-  #share {
-    width: 80%;
-    max-width: 570px;
-    margin: 50px auto 0;
-    padding-left: 30px;
-    .button { display: inline-block; vertical-align: top; }
-  }
+  #share { @include share-in-center; }
 }

@@ -137,4 +137,6 @@ body[data-theme=macos] {
     content: "";
     display: block;
   }
+  
+  #share { @include share-in-center; }
 }
