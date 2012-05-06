@@ -6,7 +6,7 @@ require "compass"
 require "yaml"
 require "yajl"
 require 'digest/sha1'
-require "./lib/ext/www-middleware"
+require File.expand_path("../ext/www-middleware", __FILE__)
 
 class HackerSays < Sinatra::Base
   configure do
