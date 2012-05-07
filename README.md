@@ -11,7 +11,7 @@ and continue programming. That's what we, hackers, like to do :)
 Just submit a new quote through Github's issues or fork this project and make
 a pull request. You're a hacker and should know how to do both of these.
 
-## Submitting new themes
+## Submitting New Themes
 
 Fork this project and make a pull request. Can't be easier than that. You're a hacker and should know how to do that.
 
