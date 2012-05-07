@@ -76,12 +76,13 @@ body[data-theme=vim] {
     p {
       color: #fbf6e4;
       font-size: 30px;
-    }
-    p:before {
-      @include quote-for-before;
-      margin-top: -27px;
-      margin-left: -123px; 
-      color: $light;
+
+      &:before {
+        @include quote-for-before;
+        margin-top: -27px;
+        margin-left: -123px; 
+        color: $light;
+      }
     }
     
     cite {
@@ -91,6 +92,10 @@ body[data-theme=vim] {
       text-align: right;
       color: $light;
       font-style: italic;
+      background: image-url("vim/cursor.gif");
+      background-size: 12px 26px;
+      background-position: right bottom;
+      background-repeat: no-repeat;
       
       &:before { content: "// "; }
     }
