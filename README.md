@@ -1,29 +1,21 @@
-# Programming::Quotes
+# Hacker Says
 
-TODO: Write a gem description
+[Hacker Says](http://hackersays.com) is a micro-site for quotes from hackers to
+hackers from all around the world. That's all there is to it!
 
-## Installation
+Just enjoy your daily dose of quotes, read news from [Hacker News](http://news.ycombinator.com)
+and continue programming. That's what we, hackers, like to do :)
 
-Add this line to your application's Gemfile:
+## Submitting New Quotes
 
-    gem 'programming-quotes'
+Just submit a new quote through Github's issues or fork this project and make
+a pull request. You're a hacker and should know how to do both of these.
 
-And then execute:
+## Submitting new themes
 
-    $ bundle
+Fork this project and make a pull request. Can't be easier than that. You're a hacker and should know how to do that.
 
-Or install it yourself as:
+## Authors
 
-    $ gem install programming-quotes
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Authors behind this project are [Jarmo Pertman](http://itreallymatters.net) and [Andri Möll](http://themoll.com). You can thank us
+by sending some pull requests.
