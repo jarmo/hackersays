@@ -1587,3 +1587,5 @@
 - :c: Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.
   :a: Alan J. Perlis
 
+- :c: Sometimes, the elegant implementation is just a function. Not a method. Not a class. Not a framework. Just a function.
+  :a: John Carmack
