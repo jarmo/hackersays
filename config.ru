@@ -1,2 +1,2 @@
-require './lib/hacker-says'
+require './hacker-says'
 run HackerSays
