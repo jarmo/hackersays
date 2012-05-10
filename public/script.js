@@ -2,8 +2,15 @@ $(function() {
   $("#themes li a").click(function(ev) {
     ev.preventDefault();
     var theme = $(this).closest("li").attr("data-theme");
-    $(document.body).attr("data-theme", theme);
+    $.cookie("theme", theme, {expires: 3650, path: "/"});
+    showTheme(theme);
   });
+
+  function showTheme(name) {
+    $(document.body).attr("data-theme", name);
+  }
+
+  if ($.cookie("theme")) showTheme($.cookie("theme"));
 });
 
 $(function() {
