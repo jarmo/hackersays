@@ -10,7 +10,8 @@
     %script(type="text/javascript" src="jquery.history-v1.7.1-r2.js")
     %script(type="text/javascript" src="jquery.cookie.js")
     %script(type="text/javascript" src="script.js")
-    
+    %script(type="text/javascript" src="https://apis.google.com/js/plusone.js")
+      {parsetags: 'explicit'}
     :javascript
       var $currentQuote = #{Yajl::Encoder.encode @quote};
     :javascript
@@ -59,3 +60,4 @@
     #share
       .button#tweet-button
       .button#fb-button
+      .button#gplus-button
