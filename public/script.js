@@ -94,5 +94,5 @@ $(function() {
   }
 
   History.replaceState($currentQuote, null, $currentQuote.id);
-  renderNewQuote($currentQuote);
+  loadNewQuote();
 });
