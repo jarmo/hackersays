@@ -1609,3 +1609,6 @@
 
 - :c: The bearing of a child takes nine months, no matter how many women are assigned. Many software tasks have this characteristic because of the sequential nature of debugging.
   :a: Fred Brooks
+
+- :c: If it works, leave it alone — there's no need to understand it. If it fails, try to fix it — there's no time to understand it.
+  :a: Bill Pfeifer
