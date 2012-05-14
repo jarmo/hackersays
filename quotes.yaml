@@ -1599,3 +1599,12 @@
 
 - :c: There is no programming language, no matter how structured, that will prevent programmers from making bad programs.
   :a: Larry Flon
+
+- :c: The three chief virtues of a programmer are: Laziness, Impatience and Hubris.
+  :a: Larry Wall
+
+- :c: The bearing of a child takes nine months, no matter how many women are assigned. Many software tasks have this characteristic because of the sequential nature of debugging.
+  :a: Fred Brooks
+
+- :c: If it works, leave it alone — there's no need to understand it. If it fails, try to fix it — there's no time to understand it.
+  :a: Bill Pfeifer
