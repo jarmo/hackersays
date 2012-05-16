@@ -1,2 +1,2 @@
-require './hacker-says'
+require './hackersays'
 run HackerSays
