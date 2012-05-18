@@ -1612,3 +1612,6 @@
 
 - :c: If it works, leave it alone — there's no need to understand it. If it fails, try to fix it — there's no time to understand it.
   :a: Bill Pfeifer
+  
+- :c: Remember, a great way to avoid broken code is to have less of it. The code that you never write will work forever.
+  :a: Russ Olsen
