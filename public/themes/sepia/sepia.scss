@@ -56,7 +56,7 @@ body[data-theme=sepia] {
     }
   }
 
-  #quote {
+  .quote {
     @include quote-in-center;
     font-family:
       American Typewriter, "Courier Bold", Courier,

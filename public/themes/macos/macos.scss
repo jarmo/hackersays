@@ -88,7 +88,7 @@ body[data-theme=macos] {
     }
   }
 
-  #quote {
+  .quote {
     @include quote-in-center;
     padding-left: 70px;
     font-family: Times, serif;

@@ -24,7 +24,7 @@ class HackerSays < Sinatra::Base
   end
 
   def quotes
-    return @quotes if production? && !@quotes.nil?
+    return @quotes if production? && defined? @quotes
 
     begin
       f = File.open(File.dirname(__FILE__) + "/quotes.yaml", "r:utf-8")
@@ -41,8 +41,8 @@ class HackerSays < Sinatra::Base
     end
   end
 
-  def random_quote
-    quote quotes.keys[rand quotes.size]
+  def random_quotes
+    Array.new(10) {quote quotes.keys[rand quotes.size]}
   end
 
   def quote(id)
@@ -50,9 +50,9 @@ class HackerSays < Sinatra::Base
     quotes[id] && quotes[id].merge(:id => id)
   end
 
-  get '/quote' do
+  get '/quotes' do
     content_type 'application/json', :charset => 'utf-8'
-    Yajl::Encoder.encode random_quote
+    Yajl::Encoder.encode random_quotes
   end
 
   get '/themes/base.css' do
@@ -66,7 +66,8 @@ class HackerSays < Sinatra::Base
   end
 
   get '/:id?' do
-    @quote = quote(params[:id]) || random_quote
+    @selected_quotes = [quote(params[:id])] || []
+    @selected_quotes += random_quotes
     haml :index
   end
 

@@ -8,12 +8,18 @@
     
     %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
     %script(type="text/javascript" src="jquery.history-v1.7.1-r2.js")
+    %script(type="text/javascript" src="jquery.bxSlider.min.js")
     %script(type="text/javascript" src="jquery.cookie.js")
+    %script(type="text/javascript" src="micro-templates.js")
     %script(type="text/javascript" src="script.js")
+    %script#template(type="x-template")
+      %li(data-id="<%= id %>")
+        %blockquote.quote
+          %p
+            %span <%= q %>
+          %cite <%= a %>
     %script(type="text/javascript" src="https://apis.google.com/js/plusone.js")
       {parsetags: 'explicit'}
-    :javascript
-      var $currentQuote = #{Yajl::Encoder.encode @quote};
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-12994604-4']);
@@ -25,7 +31,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-      
+    
   %body(data-theme="sepia")
     #header
       %h1
@@ -51,12 +57,14 @@
             - title = theme.capitalize
             %a{:title => "Switch to #{title}"}
               %img{:alt => title, :src => "/themes/#{theme}/icon.png"}
-
-    %blockquote#quote
-      %p
-        %span= @quote[:c]
-      %cite= @quote[:a]
-          
+    
+    %ul#quotes
+      - @selected_quotes.each do |quote|
+        %li{"data-id" => quote[:id]}
+          %blockquote.quote
+            %p
+              %span= quote[:c]
+            %cite= quote[:a]
     #share
       .button#tweet-button
       .button#fb-button

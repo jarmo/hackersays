@@ -14,27 +14,37 @@ $(function() {
 });
 
 $(function() {
-  var renderingTimer, fetchingTimer, animationSpeed = 1000;
 
-  History.Adapter.bind(window, 'statechange', function() {
-    clearTimeout(renderingTimer);
-    clearTimeout(fetchingTimer);
-    
-    var quote = History.getState().data;
-    if (quote.id && quote.id != $currentQuote.id) renderNewQuote(quote);
+  var readingTimer,
+      template = tmpl("template");
+
+  var slider = $("#quotes").bxSlider({
+    infiniteLoop: false,
+    hideControlOnEnd: true,
+    onAfterSlide: function(index, total, slide) {
+      slide = $(slide);
+      History.replaceState(null, "Hacker Says - quote by " + slide.find("cite").text(), slide.data("id"));
+      _gaq.push(['_trackPageview']);
+
+      renderTwitterButton();
+      renderFacebookButton();
+      renderGooglePlusButton();
+
+      //if (total - index == 5) loadNewQuotes();
+
+      clearTimeout(readingTimer);
+      readingTimer = setTimeout(function() {
+        slider.goToNextSlide();
+      }, timeForReading(slide));
+    }
   });
 
-  function loadNewQuote() {
-    $.getJSON("quote", {t: new Date().getTime()})
-     .done(function(quote) {
-      if (hasQuoteOnScreenAlready(quote))
-        loadNewQuote();
-      else {
-        clearTimeout(renderingTimer);
+  function loadNewQuotes() {
+    $.getJSON("quotes", {t: new Date().getTime()})
+     .done(function(quotes) {
         renderingTimer = setTimeout(function() {
           History.pushState(quote, null, quote.id);
         }, timeForReading());
-      }
     })
     .fail(function() {
       clearTimeout(fetchingTimer);
@@ -42,18 +52,13 @@ $(function() {
     });
   }
 
-  function renderNewQuote(quote) {
-    if (hasQuoteOnScreenAlready(quote)) return;
 
-    $("#quote").fadeOut(animationSpeed, function() {
-      $(this).find("p span").html(quote.c).end()
-             .find("cite").html(quote.a).end();
-      showQuote(quote);
-    });
-  }
-
-  function hasQuoteOnScreenAlready(quote) {
-    return $("#quote").is(":visible") && $currentQuote.id == quote.id;
+  function timeForReading(slide) {
+    var averageWPM = 200;
+    var additionalFactor = 2;
+    var time = (slide.find("span").text() + " " + slide.find("cite").text()).split(" ").length * 60 / averageWPM * additionalFactor;
+    if (time < 5) time = 5;
+    return time * 1000;
   }
 
   function renderTwitterButton() {
@@ -85,27 +90,6 @@ $(function() {
     gapi.plusone.go();
   }
 
-  function showQuote(quote) {
-    $("#quote").fadeIn(animationSpeed);
-    
-    $currentQuote = quote;
-    
-    renderTwitterButton();
-    renderFacebookButton();
-    renderGooglePlusButton();
-    _gaq.push(['_trackPageview']);
-    
-    loadNewQuote();
-  }
 
-  function timeForReading() {
-    var averageWPM = 200;
-    var additionalFactor = 2;
-    var time = ($currentQuote.c + " " + $currentQuote.a).split(" ").length * 60 / averageWPM * additionalFactor;
-    if (time < 5) time = 5;
-    return time * 1000;
-  }
-
-  History.replaceState($currentQuote, null, $currentQuote.id);
-  showQuote($currentQuote);
 });
+
