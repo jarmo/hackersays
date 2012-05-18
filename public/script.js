@@ -15,40 +15,52 @@ $(function() {
 
 $(function() {
 
-  var readingTimer,
-      template = tmpl("template");
+  var readingTimer, fetchingTimer,
+      sliderOptions = {
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        onAfterSlide: slideChange
+      };
 
-  var slider = $("#quotes").bxSlider({
-    infiniteLoop: false,
-    hideControlOnEnd: true,
-    onAfterSlide: function(index, total, slide) {
-      slide = $(slide);
-      History.replaceState(null, "Hacker Says - quote by " + slide.find("cite").text(), slide.data("id"));
-      _gaq.push(['_trackPageview']);
+  var slider = $("#quotes").bxSlider(sliderOptions);
 
-      renderTwitterButton();
-      renderFacebookButton();
-      renderGooglePlusButton();
+  function slideChange(index, total, slide) {
+    slide = $(slide);
+    History.replaceState(null, "Hacker Says - quote by " + slide.find("cite").text(), slide.data("id"));
+    _gaq.push(['_trackPageview']);
 
-      //if (total - index == 5) loadNewQuotes();
+    renderTwitterButton();
+    renderFacebookButton();
+    renderGooglePlusButton();
 
-      clearTimeout(readingTimer);
-      readingTimer = setTimeout(function() {
-        slider.goToNextSlide();
-      }, timeForReading(slide));
-    }
-  });
+    if (total - index == 5) loadNewQuotes();
+
+    clearTimeout(readingTimer);
+    readingTimer = setTimeout(function() {
+      slider.goToNextSlide();
+    }, timeForReading(slide));
+  }
 
   function loadNewQuotes() {
     $.getJSON("quotes", {t: new Date().getTime()})
      .done(function(quotes) {
-        renderingTimer = setTimeout(function() {
-          History.pushState(quote, null, quote.id);
-        }, timeForReading());
+       clearTimeout(readingTimer);
+       setTimeout(function() {
+         sliderOptions.startingSlide = slider.getCurrentSlide();
+         // we need to destroy the show before appending new quotes, sigh :(
+         slider.destroyShow()
+
+         var quotesEl = $("#quotes");
+         $.each(quotes, function(i, quote) {
+           quotesEl.append(ich.quote_template(quote));
+         });
+
+         slider = quotesEl.bxSlider(sliderOptions);
+       }, 0);
     })
     .fail(function() {
       clearTimeout(fetchingTimer);
-      fetchingTimer = setTimeout(loadNewQuote, 5000);
+      fetchingTimer = setTimeout(loadNewQuotes, 5000);
     });
   }
 
@@ -89,7 +101,6 @@ $(function() {
     $("#gplus-button").html(btn);
     gapi.plusone.go();
   }
-
 
 });
 

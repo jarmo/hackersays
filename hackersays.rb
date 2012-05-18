@@ -66,8 +66,11 @@ class HackerSays < Sinatra::Base
   end
 
   get '/:id?' do
-    @selected_quotes = [quote(params[:id])] || []
+    @selected_quotes = []
+    quote_by_id = quote(params[:id])
+    @selected_quotes << quote_by_id if quote_by_id
     @selected_quotes += random_quotes
+
     haml :index
   end
 
