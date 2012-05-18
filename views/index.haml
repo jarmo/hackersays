@@ -1,7 +1,9 @@
 !!! 5
 %html
   %head
-    %title Hacker Says
+    %title
+      Hacker Says - quote by
+      = @selected_quotes.first[:a]
     %link(rel="stylesheet" type="text/css" href="themes/base.css")
     - themes.each do |theme|
       %link(rel="stylesheet" type="text/css" href="themes/#{theme}/#{theme}.css")
