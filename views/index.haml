@@ -12,14 +12,7 @@
     %script(type="text/javascript" src="jquery.history-v1.7.1-r2.js")
     %script(type="text/javascript" src="jquery.bxSlider.min.js")
     %script(type="text/javascript" src="jquery.cookie.js")
-    %script(type="text/javascript" src="ICanHaz.min.js")
     %script(type="text/javascript" src="script.js")
-    %script#quote_template(type="text/html")
-      %li(data-id="{{id}}")
-        %blockquote.quote
-          %p
-            %span {{{c}}}
-          %cite {{a}}
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-12994604-4']);
@@ -74,6 +67,7 @@
               %cite= quote[:a]
       %a.pause(href="#") pause
       %a.resume(href="#") resume
+
     #share
       .addthis_toolbox.addthis_default_style
         %a.addthis_button_preferred_1
@@ -82,3 +76,10 @@
         %a.addthis_button_preferred_4
         %a.addthis_button_compact
         %a.addthis_counter.addthis_bubble_style
+
+    #template
+      %li
+        %blockquote.quote
+          %p
+            %span
+          %cite

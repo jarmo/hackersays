@@ -61,7 +61,11 @@ $(function() {
          slider.destroyShow()
 
          $.each(quotes, function(i, quote) {
-           quotesEl.append(ich.quote_template(quote));
+           var template = $("#template").clone()
+                          .find("span").html(quote.c).end()
+                          .find("cite").text(quote.a).end()
+                          .find("li").data("id", quote.id);
+           quotesEl.append(template);
          });
 
          slider = quotesEl.bxSlider(sliderOptions);
