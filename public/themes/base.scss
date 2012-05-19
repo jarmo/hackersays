@@ -10,9 +10,9 @@ strong   { font-weight: bolder; }
   overflow: hidden;
   width: 75%;
   margin: 0 auto;
-  .resume { display: none; }
+  .play { display: none; }
   &.paused {
-    .resume { display: block; }
+    .play { display: block; }
     .pause { display: none; }
   }
 }
