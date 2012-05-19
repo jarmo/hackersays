@@ -7,7 +7,8 @@ GEM
       fssm (>= 0.2.7)
       sass (~> 3.1)
     daemons (1.1.4)
-    eventmachine (1.0.0.beta.4.1-x86-mingw32)
+    eventmachine (1.0.0.beta.4)
+    eventmachine (1.0.0.beta.4-x86-mingw32)
     fssm (0.2.9)
     haml (3.1.4)
     rack (1.4.1)
@@ -32,6 +33,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  eventmachine (= 1.0.0.beta.4)
   haml
   sass
   sinatra
