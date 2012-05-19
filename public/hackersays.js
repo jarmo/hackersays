@@ -40,12 +40,17 @@ $(function() {
   });
 
   if (quotesEl.hasClass("via-link"))
-    $(".pause").click();
+    $("#toolbar .play").click();
 
   function slideChange(index, total, slide) {
     slide = $(slide);
+    total--;
+
     History.replaceState(null, "Hacker Says - quote by " + slide.find("cite").text(), slide.data("id"));
     _gaq.push(['_trackPageview']);
+    $("#toolbar")
+      .toggleClass("hide-prev", index == 0)
+      .toggleClass("hide-next", index == total);
 
     if (total - index == 5) loadNewQuotes();
     clearTimeout(readingTimer);
@@ -62,6 +67,7 @@ $(function() {
          sliderOptions.startingSlide = slider.getCurrentSlide();
          // we need to destroy the show before appending new quotes, sigh :(
          slider.destroyShow()
+         $("#toolbar").find(".bx-prev, .bx-next").remove();
 
          $.each(quotes, function(i, quote) {
            var template = $("#template").clone()
