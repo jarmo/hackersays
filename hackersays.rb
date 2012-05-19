@@ -49,7 +49,8 @@ class HackerSays < Sinatra::Base
 
   def quote(id)
     return unless id
-    quotes[id] && quotes[id].merge(:id => id)
+    quote = quotes[id]
+    quote && quote.merge(:id => id)
   end
 
   get '/quotes' do
