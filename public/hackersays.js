@@ -82,8 +82,10 @@ $(function() {
          });
 
          var quotesEls = quotesEl.find("li");
-         if (quotesEls.length >= 42)
+         if (quotesEls.length >= 42) {
            quotesEls.slice(0, 20).remove();
+           sliderOptions.startingSlide -= 20;
+         }
 
          slider = quotesEl.bxSlider(sliderOptions);
        }, 0);
