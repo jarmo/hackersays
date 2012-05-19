@@ -36,6 +36,8 @@ body[data-theme=sepia] {
     }
   }
 
+  #container { display: inline-block; }
+
   #themes {
     $img: "sepia/sepia-themes.png";
     min-width: image-width($img);
