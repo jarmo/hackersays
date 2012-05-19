@@ -15,7 +15,7 @@ $(function() {
 
 $(function() {
 
-  var readingTimer, fetchingTimer,
+  var readingTimer, fetchingTimer, reloadTimer,
       quotesEl = $("#quotes");
       
   var sliderOptions = {
@@ -37,6 +37,11 @@ $(function() {
       clearTimeout(readingTimer);
     else
       slider.goToNextSlide();
+  });
+
+  $(window).resize(function() {
+    clearTimeout(reloadTimer);
+    reloadTimer = setTimeout(function() { slider.reloadShow() }, 100);
   });
 
   if (quotesEl.hasClass("via-link")) $("#toolbar .play").click();
