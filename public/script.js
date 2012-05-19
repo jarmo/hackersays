@@ -24,6 +24,17 @@ $(function() {
 
   var slider = $("#quotes").bxSlider(sliderOptions);
 
+  $(".pause, .resume").click(function(ev) {
+    ev.preventDefault();
+    var el = $(ev.target);
+
+    $(".container").toggleClass("paused", el.hasClass("pause"));
+    if (el.hasClass("pause"))
+      clearTimeout(readingTimer);
+    else
+      slider.goToNextSlide();
+  });
+
   function slideChange(index, total, slide) {
     slide = $(slide);
     History.replaceState(null, "Hacker Says - quote by " + slide.find("cite").text(), slide.data("id"));
@@ -34,7 +45,6 @@ $(function() {
     renderGooglePlusButton();
 
     if (total - index == 5) loadNewQuotes();
-
     clearTimeout(readingTimer);
     readingTimer = setTimeout(function() {
       slider.goToNextSlide();
@@ -63,7 +73,6 @@ $(function() {
       fetchingTimer = setTimeout(loadNewQuotes, 5000);
     });
   }
-
 
   function timeForReading(slide) {
     var averageWPM = 200;

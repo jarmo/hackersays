@@ -6,7 +6,16 @@ body { background-color: white; color: black; }
 a { color: inherit; text-decoration: inherit; outline: 0; }
 strong   { font-weight: bolder; }
 * { @include box-sizing(border-box); }
-.container {overflow: hidden; width: 75%; margin: 0 auto;}
+.container {
+  overflow: hidden;
+  width: 75%;
+  margin: 0 auto;
+  .resume { display: none; }
+  &.paused {
+    .resume { display: block; }
+    .pause { display: none; }
+  }
+}
 
 #themes {
   position: absolute; top: 90px; right: 40px;
