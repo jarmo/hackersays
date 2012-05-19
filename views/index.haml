@@ -20,8 +20,6 @@
           %p
             %span {{{c}}}
           %cite {{a}}
-    %script(type="text/javascript" src="https://apis.google.com/js/plusone.js")
-      {parsetags: 'explicit'}
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-12994604-4']);
@@ -33,6 +31,12 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+    :javascript
+      var addthis_config = {
+        data_ga_property: _gaq[0][1],
+        data_ga_social: true
+      };      
+    %script(type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fb7bd6e61eecb7a")
     
   %body(data-theme="sepia")
     #header
@@ -71,6 +75,10 @@
       %a.pause(href="#") pause
       %a.resume(href="#") resume
     #share
-      .button#tweet-button
-      .button#fb-button
-      .button#gplus-button
+      .addthis_toolbox.addthis_default_style
+        %a.addthis_button_preferred_1
+        %a.addthis_button_preferred_2
+        %a.addthis_button_preferred_3
+        %a.addthis_button_preferred_4
+        %a.addthis_button_compact
+        %a.addthis_counter.addthis_bubble_style
