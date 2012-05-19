@@ -21,10 +21,10 @@
 }
 
 @mixin share-in-center {
-  width: 80%;
+  position: relative;
+  width: 30%;
   max-width: 570px;
-  margin: 50px auto 0;
-  padding-left: 30px;
-  margin-bottom: 30px;
-  .button { display: inline-block; vertical-align: top; }
+  top: 195px;
+  float: right;
+  margin-right: 30px;
 }
