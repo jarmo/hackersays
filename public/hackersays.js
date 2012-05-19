@@ -16,21 +16,24 @@ $(function() {
 $(function() {
 
   var readingTimer, fetchingTimer,
-      quotesEl = $("#quotes"),
-      sliderOptions = {
-        infiniteLoop: false,
-        hideControlOnEnd: true,
-        onAfterSlide: slideChange
-      };
+      quotesEl = $("#quotes");
+      
+  var sliderOptions = {
+    infiniteLoop: false,
+    hideControlOnEnd: true,
+    onAfterSlide: slideChange,
+    prevText: '',
+    nextText: '',
+    prevSelector: '#toolbar',
+    nextSelector: '#toolbar'
+  };
 
   var slider = quotesEl.bxSlider(sliderOptions);
 
-  $(".pause, .resume").click(function(ev) {
+  $("#toolbar .play").click(function(ev) {
     ev.preventDefault();
-    var el = $(ev.target);
 
-    $(".container").toggleClass("paused", el.hasClass("pause"));
-    if (el.hasClass("pause"))
+    if ($(this).toggleClass("paused").hasClass("pause"))
       clearTimeout(readingTimer);
     else
       slider.goToNextSlide();

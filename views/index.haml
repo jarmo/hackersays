@@ -57,7 +57,7 @@
             %a{:title => "Switch to #{title}"}
               %img{:alt => title, :src => "/themes/#{theme}/icon.png"}
     
-    .container 
+    #container 
       %ul#quotes{:class => @quote_by_id ? "via-link" : ""}
         - @selected_quotes.each do |quote|
           %li{"data-id" => quote[:id]}
@@ -65,8 +65,9 @@
               %p
                 %span= quote[:c]
               %cite= quote[:a]
-      %a.pause(href="#") pause
-      %a.play(href="#") play
+
+    #toolbar
+      %a.play(href="#")
 
     #share
       .addthis_toolbox.addthis_default_style
