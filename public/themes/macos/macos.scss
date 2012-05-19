@@ -139,4 +139,10 @@ body[data-theme=macos] {
   }
   
   #share { @include share-in-center; }
+
+  #toolbar a {
+    @include border-radius(5px);
+    border-color: transparent;
+    background-color: white;
+  }
 }

@@ -11,6 +11,7 @@ strong   { font-weight: bolder; }
 
 #themes {
   position: absolute; top: 90px; right: 40px;
+  z-index: 42;
   opacity: 0.7;
   &, ul { @include single-transition(opacity, 300ms, ease-in-out); }
 
@@ -46,23 +47,23 @@ strong   { font-weight: bolder; }
   overflow: hidden;
   height: 60px;
   width: $w;
-  position: absolute; bottom: 10px; left: 50%; margin-left: -$w / 2;
+  position: absolute; bottom: 15px; left: 50%; margin-left: -$w / 2;
   line-height: 60px;
   text-align: center;
 
   a {
     @include border-radius(50px);
-    border: 1px solid lighten(#e8e3d1, 10%);
+    border: 1px solid white;
     width: 50px; height: 50px;
     display: inline-block;
-    background-color: #d2ccb5;
+    background-color: rgba(black, .1);
     background-position: center;
     background-repeat: no-repeat;
   }
   a.play {
     width: 60px; height: 60px;
-    background-image: inline-image("control-play.png");
-    &.paused { background-image: inline-image("control-pause.png"); }
+    background-image: inline-image("control-pause.png");
+    &.paused { background-image: inline-image("control-play.png"); }
   }
 
   .bx-prev {
