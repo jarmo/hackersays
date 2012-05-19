@@ -41,7 +41,11 @@ $(function() {
 
   $(window).resize(function() {
     clearTimeout(reloadTimer);
-    reloadTimer = setTimeout(function() { slider.reloadShow() }, 100);
+    reloadTimer = setTimeout(function() { 
+      sliderOptions.startingSlide = slider.getCurrentSlide();
+      slider.destroyShow();
+      slider = quotesEl.bxSlider(sliderOptions);
+    }, 100);
   });
 
   if (quotesEl.hasClass("via-link")) $("#toolbar .play").click();
@@ -55,6 +59,8 @@ $(function() {
     $("#toolbar")
       .toggleClass("hide-prev", index == 0)
       .toggleClass("hide-next", index == total);
+
+    if ($("#toolbar .play").hasClass("paused")) return;
 
     if (total - index == 5) loadNewQuotes();
     clearTimeout(readingTimer);
