@@ -1615,3 +1615,7 @@
   
 - :c: Remember, a great way to avoid broken code is to have less of it. The code that you never write will work forever.
   :a: Russ Olsen
+
+- :c: Test driven development is like eating watermelon. Slice it up and work in sections at a time; eat all the red until all you have left is green.
+  :a: Terry L Thompson
+
