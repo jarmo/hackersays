@@ -32,8 +32,8 @@ class HackerSays < Sinatra::Base
       @quotes = raw_quotes.reduce({}) do |memo, quote|
         quote[:c].gsub!($/, "<br>")
         quote[:a] = quote[:a] || "Anonymous"
-        id = Digest::SHA1.hexdigest quote[:a] + quote[:c]
-        memo[id[0..5]] = quote
+        id = Digest::SHA1.hexdigest(quote[:a] + quote[:c])[0..5]
+        memo[id] = quote.merge(:id => id)
         memo
       end
     ensure
@@ -44,13 +44,7 @@ class HackerSays < Sinatra::Base
   def random_quotes
     ids = quotes.keys
     count = ids.size
-    Array.new(10) {quote ids[rand count]}
-  end
-
-  def quote(id)
-    return unless id
-    quote = quotes[id]
-    quote && quote.merge(:id => id)
+    Array.new(10) {quotes[ids[rand count]]}
   end
 
   get '/quotes' do
@@ -73,7 +67,7 @@ class HackerSays < Sinatra::Base
     pass if request.path_info == "/favicon.ico"
 
     @selected_quotes = []
-    @quote_by_id = quote(params[:id])
+    @quote_by_id = quotes[params[:id]]
     @selected_quotes << @quote_by_id if @quote_by_id
     @selected_quotes += random_quotes
 
