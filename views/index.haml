@@ -61,7 +61,7 @@
               %img{:alt => title, :src => "/themes/#{theme}/icon.png"}
     
     .container 
-      %ul#quotes
+      %ul#quotes{:class => @quote_by_id ? "via-link" : ""}
         - @selected_quotes.each do |quote|
           %li{"data-id" => quote[:id]}
             %blockquote.quote

@@ -16,13 +16,14 @@ $(function() {
 $(function() {
 
   var readingTimer, fetchingTimer,
+      quotesEl = $("#quotes"),
       sliderOptions = {
         infiniteLoop: false,
         hideControlOnEnd: true,
         onAfterSlide: slideChange
       };
 
-  var slider = $("#quotes").bxSlider(sliderOptions);
+  var slider = quotesEl.bxSlider(sliderOptions);
 
   $(".pause, .resume").click(function(ev) {
     ev.preventDefault();
@@ -34,6 +35,9 @@ $(function() {
     else
       slider.goToNextSlide();
   });
+
+  if (quotesEl.hasClass("via-link"))
+    $(".pause").click();
 
   function slideChange(index, total, slide) {
     slide = $(slide);
@@ -60,7 +64,6 @@ $(function() {
          // we need to destroy the show before appending new quotes, sigh :(
          slider.destroyShow()
 
-         var quotesEl = $("#quotes");
          $.each(quotes, function(i, quote) {
            quotesEl.append(ich.quote_template(quote));
          });

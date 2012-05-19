@@ -42,7 +42,9 @@ class HackerSays < Sinatra::Base
   end
 
   def random_quotes
-    Array.new(10) {quote quotes.keys[rand quotes.size]}
+    ids = quotes.keys
+    count = ids.size
+    Array.new(10) {quote ids[rand count]}
   end
 
   def quote(id)
@@ -66,9 +68,12 @@ class HackerSays < Sinatra::Base
   end
 
   get '/:id?' do
+    # if there's better way to avoid requests for favicon.ico, let me know!
+    pass if request.path_info == "/favicon.ico"
+
     @selected_quotes = []
-    quote_by_id = quote(params[:id])
-    @selected_quotes << quote_by_id if quote_by_id
+    @quote_by_id = quote(params[:id])
+    @selected_quotes << @quote_by_id if @quote_by_id
     @selected_quotes += random_quotes
 
     haml :index
