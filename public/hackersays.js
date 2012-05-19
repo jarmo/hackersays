@@ -33,14 +33,13 @@ $(function() {
   $("#toolbar .play").click(function(ev) {
     ev.preventDefault();
 
-    if ($(this).toggleClass("paused").hasClass("pause"))
+    if ($(this).toggleClass("paused").hasClass("paused"))
       clearTimeout(readingTimer);
     else
       slider.goToNextSlide();
   });
 
-  if (quotesEl.hasClass("via-link"))
-    $(".pause").click();
+  if (quotesEl.hasClass("via-link")) $("#toolbar .play").click();
 
   function slideChange(index, total, slide) {
     slide = $(slide);
