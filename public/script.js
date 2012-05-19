@@ -68,6 +68,10 @@ $(function() {
            quotesEl.append(template);
          });
 
+         var quotesEls = quotesEl.find("li");
+         if (quotesEls.length >= 42)
+           quotesEls.slice(0, 20).remove();
+
          slider = quotesEl.bxSlider(sliderOptions);
        }, 0);
     })
