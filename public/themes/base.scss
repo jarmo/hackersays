@@ -61,8 +61,8 @@ strong   { font-weight: bolder; }
   }
   a.play {
     width: 60px; height: 60px;
-    background-image: inline-image("control-play.png");
-    &.paused { background-image: inline-image("control-pause.png"); }
+    background-image: inline-image("control-pause.png");
+    &.paused { background-image: inline-image("control-play.png"); }
   }
 
   .bx-prev, .prev {
