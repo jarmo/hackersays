@@ -3,6 +3,8 @@
 @import "compass/css3/transition";
 @import "compass/css3/border-radius";
 
+$toolbar-rest-opacity: 0.4;
+
 html { min-height: 100%; }
 body { background-color: white; color: black; }
 a { color: inherit; text-decoration: inherit; outline: 0; }
@@ -47,8 +49,6 @@ strong   { font-weight: bolder; }
 
 #template { display: none; }
 
-$defaultOpacity: 0.4;
-
 #toolbar {
   $w: 180px;
   overflow: hidden;
@@ -66,7 +66,9 @@ $defaultOpacity: 0.4;
     background-color: rgba(black, .1);
     background-position: center;
     background-repeat: no-repeat;
-    opacity: $defaultOpacity;
+    
+    @include single-transition(opacity, 500ms, ease-in-out);
+    body.at-rest & { opacity: $toolbar-rest-opacity; }
   }
   a.play {
     width: 60px; height: 60px;
@@ -92,5 +94,7 @@ $defaultOpacity: 0.4;
   position: absolute; bottom: 35px; right: 30px;
   text-align: right;
   min-width: 150px;
-  a { opacity: $defaultOpacity; }
+  
+  a { @include single-transition(opacity, 500ms, ease-in-out); }
+  body.at-rest & a { opacity: $toolbar-rest-opacity; }
 }
