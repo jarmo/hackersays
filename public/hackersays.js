@@ -11,6 +11,25 @@ $(function() {
   }
 
   if ($.cookie("theme")) showTheme($.cookie("theme"));
+
+  var opacityResetTimer, mouseMoveTimer, lastPageX, lastPageY,
+      opacityElsSelector = "#share a, #toolbar a",
+      originalControlsOpacity = $(opacityElsSelector).css("opacity");
+
+  $(document).mousemove(function(ev) {
+    clearTimeout(mouseMoveTimer);
+    mouseMoveTimer = setTimeout(function() {
+      if (ev.pageX == lastPageX && ev.pageY == lastPageY)
+        return;
+
+      lastPageX = ev.pageX; lastPageY = ev.pageY;
+      $(opacityElsSelector).stop(true).animate({opacity: 1}, 400);
+      clearTimeout(opacityResetTimer);
+      opacityResetTimer = setTimeout(function() {
+        $(opacityElsSelector).stop(true).animate({opacity: originalControlsOpacity}, 800);
+      }, 2000)
+    }, 100);
+  });
 });
 
 $(function() {

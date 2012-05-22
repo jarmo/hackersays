@@ -47,6 +47,8 @@ strong   { font-weight: bolder; }
 
 #template { display: none; }
 
+$defaultOpacity: 0.4;
+
 #toolbar {
   $w: 180px;
   overflow: hidden;
@@ -64,6 +66,7 @@ strong   { font-weight: bolder; }
     background-color: rgba(black, .1);
     background-position: center;
     background-repeat: no-repeat;
+    opacity: $defaultOpacity;
   }
   a.play {
     width: 60px; height: 60px;
@@ -89,4 +92,5 @@ strong   { font-weight: bolder; }
   position: absolute; bottom: 35px; right: 30px;
   text-align: right;
   min-width: 150px;
+  a { opacity: $defaultOpacity; }
 }
