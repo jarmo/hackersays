@@ -14,7 +14,6 @@ $(function() {
 });
 
 $(function() {
-
   var readingTimer, fetchingTimer, reloadTimer,
       quotesEl = $("#quotes");
       
@@ -57,8 +56,8 @@ $(function() {
     History.replaceState(null, "Hacker Says - quote by " + slide.find("cite").text(), slide.data("id"));
     _gaq.push(['_trackPageview']);
     $("#toolbar")
-      .toggleClass("hide-prev", index == 0)
-      .toggleClass("hide-next", index == total);
+      .toggleClass("first-quote", index == 0)
+      .toggleClass("last-quote", index == total);
 
     if ($("#toolbar .play").hasClass("paused")) return;
 
@@ -109,6 +108,5 @@ $(function() {
     if (time < 5) time = 5;
     return time * 1000;
   }
-
 });
 

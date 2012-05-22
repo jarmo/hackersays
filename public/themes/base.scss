@@ -76,18 +76,11 @@ strong   { font-weight: bolder; }
     background-image: inline-image("control-prev.png");
   }
 
-  &.hide-prev {
-    .bx-prev { visibility: hidden; }
-  }
-
   .bx-next {
     float: right; margin-top: 5px;
     background-image: inline-image("control-next.png");
   }
 
-  &.hide-next {
-    .bx-next { visibility: hidden; }
-  }
-
+  &.first-quote .bx-prev,
+  &.last-quote .bx-next { visibility: hidden; }
 }
-
