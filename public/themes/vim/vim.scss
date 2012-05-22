@@ -101,8 +101,6 @@ body[data-theme=vim] {
     }
   }
 
-  #share { @include share-in-center; }
-
   #toolbar a {
     border-color: darken($light, 20%);
     background-color: rgba($light, 0.2)

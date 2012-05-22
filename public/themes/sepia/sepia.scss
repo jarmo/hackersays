@@ -82,8 +82,6 @@ body[data-theme=sepia] {
     }
   }
 
-  #share { @include share-in-center; }
-
   #toolbar a {
     border-color: lighten(#e8e3d1, 10%); 
     background-color: #d2ccb5;

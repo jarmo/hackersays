@@ -84,3 +84,9 @@ strong   { font-weight: bolder; }
   &.first-quote .bx-prev,
   &.last-quote .bx-next { visibility: hidden; }
 }
+
+#share {
+  position: absolute; bottom: 35px; right: 30px;
+  text-align: right;
+  min-width: 150px;
+}
