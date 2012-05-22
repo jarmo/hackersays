@@ -3,7 +3,10 @@
 @import "compass/css3/transition";
 @import "compass/css3/border-radius";
 
-$toolbar-rest-opacity: 0.4;
+@mixin opacity-on-mousemove {
+  a { @include single-transition(opacity, 500ms, ease-in-out); }
+  body.at-rest & a { opacity: .4; }
+}
 
 html { min-height: 100%; }
 body { background-color: white; color: black; }
@@ -58,6 +61,8 @@ strong   { font-weight: bolder; }
   line-height: 60px;
   text-align: center;
 
+  @include opacity-on-mousemove;
+
   a {
     @include border-radius(50px);
     border: 1px solid white;
@@ -66,10 +71,8 @@ strong   { font-weight: bolder; }
     background-color: rgba(black, .1);
     background-position: center;
     background-repeat: no-repeat;
-    
-    @include single-transition(opacity, 500ms, ease-in-out);
-    body.at-rest & { opacity: $toolbar-rest-opacity; }
   }
+
   a.play {
     width: 60px; height: 60px;
     background-image: inline-image("control-pause.png");
@@ -95,6 +98,5 @@ strong   { font-weight: bolder; }
   text-align: right;
   min-width: 150px;
   
-  a { @include single-transition(opacity, 500ms, ease-in-out); }
-  body.at-rest & a { opacity: $toolbar-rest-opacity; }
+  @include opacity-on-mousemove;
 }
