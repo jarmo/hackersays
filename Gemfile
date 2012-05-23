@@ -7,3 +7,7 @@ gem "haml"
 gem "sass"
 gem "compass"
 gem "yajl-ruby"
+
+group :development do
+  gem "sinatra-contrib"
+end

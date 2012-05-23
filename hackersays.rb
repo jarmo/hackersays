@@ -20,7 +20,14 @@ class HackerSays < Sinatra::Base
     set :haml, {:format => :html5}
     set :scss, Compass.sass_engine_options.
       merge(:views => File.join(public_folder, "themes"))
+    set :protection, :except => :frame_options
+
     use WwwMiddleware
+  end
+
+  configure :development do
+    require "sinatra/reloader"
+    register Sinatra::Reloader
   end
 
   def quotes
