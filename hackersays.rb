@@ -54,6 +54,11 @@ class HackerSays < Sinatra::Base
     Array.new(10) {quotes[ids[rand count]]}
   end
 
+  get '/quote' do
+    content_type 'application/json', :charset => 'utf-8'
+    Yajl::Encoder.encode random_quotes.first
+  end
+
   get '/quotes' do
     content_type 'application/json', :charset => 'utf-8'
     Yajl::Encoder.encode random_quotes
