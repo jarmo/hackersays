@@ -56,7 +56,9 @@ class HackerSays < Sinatra::Base
 
   get '/quote' do
     content_type 'application/json', :charset => 'utf-8'
-    Yajl::Encoder.encode random_quotes.first
+    quote = random_quotes.first
+    quote[:c].gsub!("<br>", $/)
+    Yajl::Encoder.encode quote
   end
 
   get '/quotes' do
