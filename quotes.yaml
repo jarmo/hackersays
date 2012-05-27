@@ -1633,9 +1633,6 @@
   
 - :c: It's 5.50 a.m.... Do you know where your stack pointer is?
   
-- :c: C makes it easy to shoot yourself in the foot. In C++ it's harder, but when you do, you blow off your whole leg.
-  :a: Bjarne Stroustrup
-  
 - :c: "The evolution of languages: FORTRAN is a non-typed language. C is a weakly typed language. Ada is a strongly typed language. C++ is a strongly hyped language."
   :a: Ron Sercely
   
@@ -1657,9 +1654,6 @@
 - :c: C++ is an horrible language. Even if the choice of C were to do *nothing* but keep the C++ programmers out, that in itself would be a huge reason to use C.
   :a: Linus Torvalds
   
-- :c: The use of COBOL cripples the mind; its teaching should therefore be regarded as a criminal offense.
-  :a: E.W. Dijkstra
-  
 - :c: FORTRAN is not a flower but a weed — it is hardy, occasionally blooms, and grows in every computer.
   :a: Alan J. Perlis
     
@@ -1672,11 +1666,5 @@
 - :c: Lisp isn't a language, it's a building material.
   :a: Alan Kay
     
-- :c: Perl is the only language that looks the same before and after RSA encryption.
-  :a: Keith Bostic
-    
 - :c: It is easier to port a shell than a shell script.
   :a: Larry Wall
-    
-- :c: "There are only two kinds of programming languages: those people always bitch about and those nobody uses."
-  :a: Bjarne Stroustrup
