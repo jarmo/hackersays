@@ -1619,3 +1619,64 @@
 - :c: Test driven development is like eating watermelon. Slice it up and work in sections at a time; eat all the red until all you have left is green.
   :a: Terry L Thompson
 
+- :c: I couldn't resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.
+  :a: Tony (C.A.R.) Hoare
+  
+- :c: In My Egotistical Opinion, most people's C programs should be indented six feet downward and covered with dirt.
+  :a: Blair P. Houghton
+  
+- :c: Going from programming in Pascal to programming in C, is like learning to write in Morse code.
+  :a: J.P. Candusso
+  
+- :c: Writing in C or C++ is like running a chain saw with all the safety guards removed.
+  :a: Bob Gray
+  
+- :c: It's 5.50 a.m.... Do you know where your stack pointer is?
+  
+- :c: C makes it easy to shoot yourself in the foot. In C++ it's harder, but when you do, you blow off your whole leg.
+  :a: Bjarne Stroustrup
+  
+- :c: The evolution of languages: FORTRAN is a non-typed language. C is a weakly typed language. Ada is a strongly typed language. C++ is a strongly hyped language.
+  :a: Ron Sercely
+  
+- :c: The latest new features in C++ are designed to fix the previously new features in C++.
+  :a: David Jameson
+  
+- :c: Fifty years of programming language research, and we end up with C++ ?
+  :a: Richard A. O'Keefe
+  
+- :c: Ever spend a little time reading comp.lang.c++ ? That's really the best place to learn about the number of C++ users looking for a better language.
+  :a: R. William Beckwith
+  
+- :c: C++ has its place in the history of programming languages. Just as Caligula has his place in the history of the Roman Empire.
+  :a: Robert Firth
+  
+- :c: Java is C++ without the guns, knives, and clubs.
+  :a: James Gosling
+  
+- :c: C++ is an horrible language. Even if the choice of C were to do *nothing* but keep the C++ programmers out, that in itself would be a huge reason to use C.
+  :a: Linus Torvalds
+  
+- :c: The use of COBOL cripples the mind; its teaching should therefore be regarded as a criminal offense.
+  :a: E.W. Dijkstra
+  
+- :c: FORTRAN is not a flower but a weed — it is hardy, occasionally blooms, and grows in every computer.
+  :a: Alan J. Perlis
+    
+- :c: FORTRAN, the infantile disorder, by now nearly 20 years old, is hopelessly inadequate for whatever computer application you have in mind today: it is now too clumsy, too risky, and too expensive to use.
+  :a: E. W. Dijkstra
+    
+- :c: FORTRAN was the language of choice for the same reason that three-legged races are popular.
+  :a: Ken Thompson
+    
+- :c: Lisp isn't a language, it's a building material.
+  :a: Alan Kay
+    
+- :c: Perl is the only language that looks the same before and after RSA encryption.
+  :a: Keith Bostic
+    
+- :c: It is easier to port a shell than a shell script.
+  :a: Larry Wall
+    
+- :c: There are only two kinds of programming languages: those people always bitch about and those nobody uses.
+  :a: Bjarne Stroustrup
