@@ -1636,7 +1636,7 @@
 - :c: C makes it easy to shoot yourself in the foot. In C++ it's harder, but when you do, you blow off your whole leg.
   :a: Bjarne Stroustrup
   
-- :c: The evolution of languages: FORTRAN is a non-typed language. C is a weakly typed language. Ada is a strongly typed language. C++ is a strongly hyped language.
+- :c: "The evolution of languages: FORTRAN is a non-typed language. C is a weakly typed language. Ada is a strongly typed language. C++ is a strongly hyped language."
   :a: Ron Sercely
   
 - :c: The latest new features in C++ are designed to fix the previously new features in C++.
@@ -1663,7 +1663,7 @@
 - :c: FORTRAN is not a flower but a weed — it is hardy, occasionally blooms, and grows in every computer.
   :a: Alan J. Perlis
     
-- :c: FORTRAN, the infantile disorder, by now nearly 20 years old, is hopelessly inadequate for whatever computer application you have in mind today: it is now too clumsy, too risky, and too expensive to use.
+- :c: "FORTRAN, the infantile disorder, by now nearly 20 years old, is hopelessly inadequate for whatever computer application you have in mind today: it is now too clumsy, too risky, and too expensive to use."
   :a: E. W. Dijkstra
     
 - :c: FORTRAN was the language of choice for the same reason that three-legged races are popular.
@@ -1678,5 +1678,5 @@
 - :c: It is easier to port a shell than a shell script.
   :a: Larry Wall
     
-- :c: There are only two kinds of programming languages: those people always bitch about and those nobody uses.
+- :c: "There are only two kinds of programming languages: those people always bitch about and those nobody uses."
   :a: Bjarne Stroustrup
