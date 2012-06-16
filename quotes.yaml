@@ -1668,3 +1668,6 @@
     
 - :c: It is easier to port a shell than a shell script.
   :a: Larry Wall
+
+- :c: I hate code, and I want as little of it in our product as possible.
+  :a: Jack Diedrich
