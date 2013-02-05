@@ -1674,3 +1674,9 @@
 
 - :c: "Some programmers, when confronted with a problem, think \"I know, I'll use floating point arithmetic.\" Now they have 1.999999999997 problems."
   :a: Tom Scott
+
+- :c: "Professionalism has no place in art, and hacking is art. Software Engineering might be science; but that's not what I do. I'm a hacker, not an engineer."
+  :a: Jamie Zawinski
+
+- :c: "[Perl] combines all the worst aspects of C and Lisp: a billion different sublanguages in one monolithic executable. It combines the power of C with the readability of PostScript."
+  :a: Jamie Zawinski
