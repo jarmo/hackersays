@@ -1683,3 +1683,15 @@
 
 - :c: "The object-oriented model makes it easy to build up programs by accretion. What this often means, in practice, is that it provides a structured way to write spaghetti code."
   :a: Paul Graham
+
+- :c: Programming can be fun, so can cryptography; however they should not be combined.
+  :a: Kreitzberg and Shneiderman
+
+- :c: Change breaks the brittle.
+  :a: Jan Houtema
+
+- :c: The best writing is rewriting.
+  :a: E. B. White
+
+- :c: We're even wrong about which mistakes we're making.
+  :a: Carl Winfeld
