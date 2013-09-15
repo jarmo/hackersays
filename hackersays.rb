@@ -4,7 +4,8 @@ require "haml"
 require "sass"
 require "compass"
 require "yaml"
-require "yajl"
+require "multi_json"
+require "oj"
 require 'digest/sha1'
 require File.expand_path("../ext/www-middleware", __FILE__)
 
@@ -58,12 +59,12 @@ class HackerSays < Sinatra::Base
     content_type 'application/json', :charset => 'utf-8'
     quote = random_quotes.first
     quote[:c].gsub!("<br>", $/)
-    Yajl::Encoder.encode quote
+    MultiJson.dump quote
   end
 
   get '/quotes' do
     content_type 'application/json', :charset => 'utf-8'
-    Yajl::Encoder.encode random_quotes
+    MultiJson.dump random_quotes
   end
 
   get '/themes/base.css' do

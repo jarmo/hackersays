@@ -1,23 +1,26 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     backports (2.3.0)
-    chunky_png (1.2.5)
-    compass (0.12.1)
+    chunky_png (1.2.8)
+    compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
     daemons (1.1.4)
-    eventmachine (1.0.0.beta.4)
-    eventmachine (1.0.0.beta.4-x86-mingw32)
-    fssm (0.2.9)
-    haml (3.1.4)
+    eventmachine (1.0.3)
+    eventmachine (1.0.3-x86-mingw32)
+    fssm (0.2.10)
+    haml (4.0.3)
+      tilt
+    multi_json (1.7.9)
+    oj (2.0.14)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
     rack-test (0.6.1)
       rack (>= 1.0)
-    sass (3.1.17)
+    sass (3.2.10)
     sinatra (1.3.2)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
@@ -34,8 +37,6 @@ GEM
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
     tilt (1.3.3)
-    yajl-ruby (1.1.0)
-    yajl-ruby (1.1.0-x86-mingw32)
 
 PLATFORMS
   ruby
@@ -43,10 +44,11 @@ PLATFORMS
 
 DEPENDENCIES
   compass
-  eventmachine (= 1.0.0.beta.4)
+  eventmachine
   haml
+  multi_json
+  oj
   sass
   sinatra
   sinatra-contrib
   thin
-  yajl-ruby

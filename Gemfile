@@ -1,12 +1,13 @@
-source :rubygems
+source "https://rubygems.org"
 
 gem "sinatra"
 gem "thin"
-gem "eventmachine", "1.0.0.beta.4"
+gem "eventmachine"
 gem "haml"
 gem "sass"
 gem "compass"
-gem "yajl-ruby"
+gem "multi_json"
+gem "oj"
 
 group :development do
   gem "sinatra-contrib"
