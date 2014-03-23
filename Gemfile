@@ -3,8 +3,6 @@ source "https://rubygems.org"
 ruby "2.0.0"
 
 gem "sinatra"
-gem "thin"
-gem "eventmachine"
 gem "haml"
 gem "sass"
 gem "compass"
@@ -13,4 +11,9 @@ gem "oj"
 
 group :development do
   gem "sinatra-contrib"
+  gem "thin"
+end
+
+group :production do
+  gem "puma"
 end
