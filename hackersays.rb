@@ -32,32 +32,32 @@ class HackerSays < Sinatra::Base
   end
 
   def quotes
-    return @quotes if production? && defined? @quotes
-
-    begin
-      f = File.open(File.dirname(__FILE__) + "/quotes.yaml", "r:utf-8")
-      raw_quotes = YAML.load f.read
-      @quotes = raw_quotes.reduce({}) do |memo, quote|
-        quote[:c].gsub!($/, "<br>")
-        quote[:a] = quote[:a] || "Anonymous"
-        id = Digest::SHA1.hexdigest(quote[:a] + quote[:c])[0..5]
-        memo[id] = quote.merge(:id => id)
-        memo
-      end
-    ensure
-      f.close
-    end
+    @quotes ||= begin
+                  f = File.open(File.dirname(__FILE__) + "/quotes.yaml", "r:utf-8")
+                  raw_quotes = YAML.load f.read
+                  raw_quotes.reduce({}) do |memo, quote|
+                    quote[:c].gsub!($/, "<br>")
+                    quote[:a] = quote[:a] || "Anonymous"
+                    id = Digest::SHA1.hexdigest(quote[:a] + quote[:c])[0..5]
+                    memo[id] = quote.merge(:id => id)
+                    memo
+                  end
+                ensure
+                  f.close
+                end
   end
 
-  def random_quotes
-    ids = quotes.keys
-    count = ids.size
-    Array.new(10) {quotes[ids[rand count]]}
+  def quotes_values
+    @quotes_values ||= quotes.values
+  end
+
+  def random_quotes(count=10)
+    quotes_values.sample(count)
   end
 
   get '/quote' do
     content_type 'application/json', :charset => 'utf-8'
-    quote = random_quotes.first
+    quote = random_quotes(1)
     quote[:c].gsub!("<br>", $/)
     MultiJson.dump quote
   end
@@ -71,7 +71,7 @@ class HackerSays < Sinatra::Base
     content_type 'text/css', :charset => 'utf-8'
     scss :base
   end
-  
+
   get '/themes/:theme/*.css' do
     content_type 'text/css', :charset => 'utf-8'
     scss "#{params[:theme]}/#{params[:theme]}".to_sym
