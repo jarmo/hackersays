@@ -23,7 +23,7 @@ class HackerSays < Sinatra::Base
       merge(:views => File.join(public_folder, "themes"))
     set :protection, :except => :frame_options
 
-    use WwwMiddleware
+    #use WwwMiddleware
   end
 
   configure :development do
