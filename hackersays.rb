@@ -57,7 +57,7 @@ class HackerSays < Sinatra::Base
 
   get '/quote' do
     content_type 'application/json', :charset => 'utf-8'
-    quote = random_quotes(1)
+    quote = random_quotes(1).first
     quote[:c].gsub!("<br>", $/)
     MultiJson.dump quote
   end
