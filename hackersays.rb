@@ -5,7 +5,6 @@ require "sass"
 require "compass"
 require "yaml"
 require "multi_json"
-require "oj"
 require 'digest/sha1'
 require File.expand_path("../ext/www-middleware", __FILE__)
 
