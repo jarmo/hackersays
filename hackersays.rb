@@ -57,8 +57,8 @@ class HackerSays < Sinatra::Base
     self.class.quotes_values.sample(count)
   end
 
-  get '/foo' do
-    self.class.quotes.object_id.to_s
+  def quotes
+    self.class.quotes
   end
 
   get '/quote' do
@@ -88,7 +88,7 @@ class HackerSays < Sinatra::Base
     pass if request.path_info == "/favicon.ico"
 
     @selected_quotes = []
-    @quote_by_id = self.class.quotes[params[:id]]
+    @quote_by_id = quotes[params[:id]]
     @selected_quotes << @quote_by_id if @quote_by_id
     @selected_quotes += random_quotes
 
