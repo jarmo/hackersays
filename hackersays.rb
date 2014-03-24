@@ -77,6 +77,10 @@ class HackerSays < Sinatra::Base
     scss "#{params[:theme]}/#{params[:theme]}".to_sym
   end
 
+  get '/quotes_id' do
+    quotes.object_id
+  end
+
   get '/:id?' do
     # if there's better way to avoid requests for favicon.ico, let me know!
     pass if request.path_info == "/favicon.ico"
