@@ -56,7 +56,7 @@ class HackerSays < Sinatra::Base
   end
 
   get '/foo' do
-    quotes.object_id
+    quotes.object_id.to_s
   end
 
   get '/quote' do
