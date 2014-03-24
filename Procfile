@@ -1,1 +1,1 @@
-web: rackup -s puma -p $PORT
+web: rackup -s puma -p $PORT -e $RACK_ENV
