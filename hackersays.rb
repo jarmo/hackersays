@@ -55,6 +55,10 @@ class HackerSays < Sinatra::Base
     quotes_values.sample(count)
   end
 
+  get '/foo' do
+    quotes.object_id
+  end
+
   get '/quote' do
     content_type 'application/json', :charset => 'utf-8'
     quote = random_quotes(1).first
@@ -75,10 +79,6 @@ class HackerSays < Sinatra::Base
   get '/themes/:theme/*.css' do
     content_type 'text/css', :charset => 'utf-8'
     scss "#{params[:theme]}/#{params[:theme]}".to_sym
-  end
-
-  get '/quotes_id' do
-    quotes.object_id
   end
 
   get '/:id?' do
