@@ -31,32 +31,34 @@ class HackerSays < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  def quotes
-    @quotes ||= begin
-                  f = File.open(File.dirname(__FILE__) + "/quotes.yaml", "r:utf-8")
-                  raw_quotes = YAML.load f.read
-                  raw_quotes.reduce({}) do |memo, quote|
-                    quote[:c].gsub!($/, "<br>")
-                    quote[:a] = quote[:a] || "Anonymous"
-                    id = Digest::SHA1.hexdigest(quote[:a] + quote[:c])[0..5]
-                    memo[id] = quote.merge(:id => id)
-                    memo
+  class << self
+    def quotes
+      @quotes ||= begin
+                    f = File.open(File.dirname(__FILE__) + "/quotes.yaml", "r:utf-8")
+                    raw_quotes = YAML.load f.read
+                    raw_quotes.reduce({}) do |memo, quote|
+                      quote[:c].gsub!($/, "<br>")
+                      quote[:a] = quote[:a] || "Anonymous"
+                      id = Digest::SHA1.hexdigest(quote[:a] + quote[:c])[0..5]
+                      memo[id] = quote.merge(:id => id)
+                      memo
+                    end
+                  ensure
+                    f.close
                   end
-                ensure
-                  f.close
-                end
-  end
+    end
 
-  def quotes_values
-    @quotes_values ||= quotes.values
+    def quotes_values
+      @quotes_values ||= quotes.values
+    end
   end
 
   def random_quotes(count=10)
-    quotes_values.sample(count)
+    self.class.quotes_values.sample(count)
   end
 
   get '/foo' do
-    quotes.object_id.to_s
+    self.class.quotes.object_id.to_s
   end
 
   get '/quote' do
@@ -86,7 +88,7 @@ class HackerSays < Sinatra::Base
     pass if request.path_info == "/favicon.ico"
 
     @selected_quotes = []
-    @quote_by_id = quotes[params[:id]]
+    @quote_by_id = self.class.quotes[params[:id]]
     @selected_quotes << @quote_by_id if @quote_by_id
     @selected_quotes += random_quotes
 
