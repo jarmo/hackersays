@@ -1699,5 +1699,36 @@
 - :c: As soon as you agree on the number of spaces for indentation, no-one argues for tabs.
   :a: Alvar Lumberg
   
+- :c: Given enough eyeballs, all bugs are shallow.
+  :a: Eric S. Raymond
+  
+- :c: Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?
+  :a: Brian Kernighan
+   
+- :c: The most effective debugging tool is still careful thought, coupled with judiciously placed print statements.
+  :a: Brian Kernighan
+  
+- :c: From then on, when anything went wrong with a computer, we said it had bugs in it.
+  :a:  Grace Hopper
+  
+- :c: Testing can only prove the presence of bugs, not their absence.
+  :a: Edsger W. Dijkstra
+  
+- :c: If debugging is the process of removing bugs, then programming must be the process of putting them in.
+  :a: Edsger W. Dijkstra
+  
+- :c: bug, n: An elusive creature living in a program that makes it incorrect. The activity of "debugging", or removing bugs from a program, ends when people get tired of doing it, not when the bugs are removed.
+  :a: 
+  
+- :c: Much to the surprise of the builders of the first digital computers, programs written for them usually did not work.
+  :a: Rodney Brooks
+  
+- :c: Even perfect program verification can only establish that a program meets its specification. […] Much of the essence of building a program is in fact the debugging of the specification.
+  :a: Fred Brooks 
+
+  
+
+  
+  
   
   
