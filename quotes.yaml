@@ -1743,6 +1743,9 @@
   
 - :c: Zawinski's Law: Every program attempts to expand until it can read mail. Those programs which cannot so expand are replaced by ones which can.
   :a: Jamie Zawinski 
+  
+- :c: One day my daughter came in, looked over my shoulder at some Perl 4 code, and said, "What is that, swearing?"
+  :a: Larry Wall
 
   
 
