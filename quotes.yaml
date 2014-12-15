@@ -1725,6 +1725,24 @@
   
 - :c: Even perfect program verification can only establish that a program meets its specification. […] Much of the essence of building a program is in fact the debugging of the specification.
   :a: Fred Brooks 
+  
+- :c: When someone says: "I want a programming language in which I need only say what I wish done", give him a lollipop.
+  :a: Alan J. Perlis
+  
+- :c: The main activity of programming is not the origination of new independent programs, but in the integration, modification, and explanation of existing ones.
+  :a: Terry Winograd
+  
+- :c: Weinberg's Second Law: If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization.
+  :a: Gerald Weinberg 
+  
+- :c: Asking for efficiency and adaptability in the same program is like asking for a beautiful and modest wife. Although beauty and modesty have been known to occur in the same woman, we'll probably have to settle for one or the other. At least that's better than neither.
+  :a: Gerald M. Weinberg 
+  
+- :c: There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
+  :a: C.A.R. Hoare
+  
+- :c: Zawinski's Law: Every program attempts to expand until it can read mail. Those programs which cannot so expand are replaced by ones which can.
+  :a: Jamie Zawinski 
 
   
 
