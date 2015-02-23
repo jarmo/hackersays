@@ -15,6 +15,11 @@ a pull request. You're a hacker and should know how to do both of these.
 
 Fork this project and make a pull request. Can't be easier than that. Or can it?
 
+## Integration With Lita/Slack
+
+[lita-hackersays](https://github.com/jarmo/lita-hackersays) can be used with 
+[Lita](https://github.com/jimmycuadra/lita) to read quotes on a [Slack](https://slack.com/) or IRC chat.
+
 ## Authors
 
 Authors behind this project are [Jarmo Pertman](http://itreallymatters.net) and [Andri Möll](http://themoll.com). You can thank us
