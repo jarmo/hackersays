@@ -25,7 +25,7 @@ GEM
     oj (2.6.1)
     puma (2.8.1)
       rack (>= 1.1, < 2.0)
-    rack (1.5.2)
+    rack (1.6.4)
     rack-protection (1.5.2)
       rack
     rack-test (0.6.2)
