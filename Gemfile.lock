@@ -30,6 +30,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.4.2)
     sass (3.2.18)
     sinatra (1.4.4)
       rack (~> 1.4)
@@ -61,6 +62,7 @@ DEPENDENCIES
   multi_json
   oj
   puma
+  rake
   sass
   sinatra
   sinatra-contrib

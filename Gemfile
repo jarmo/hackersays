@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.0.0"
+ruby File.read(File.expand_path('.ruby-version', __dir__)).strip
 
 gem "sinatra"
 gem "haml"
@@ -8,6 +8,7 @@ gem "sass"
 gem "compass"
 gem "multi_json"
 gem "oj"
+gem "rake"
 
 group :development do
   gem "sinatra-contrib"
