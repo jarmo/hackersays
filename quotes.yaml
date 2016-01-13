@@ -1756,7 +1756,11 @@
   
 - :c: There's no place like 127.0.0.1
   :a: Anonymous
-
+  
+- :c: Good programmers think that they might do good if they try, but bad programmers just know that they're good. 
+      Good programmers suspect that there's always room for improvement, and they look for it. Bad programmers are complacent. 
+      Good programmers learn and get better. Good programmers are mindful that there are many ways that things can be better: shorter code, more readable and maintainable code, neater code, a more elegant expression of the algorithm, a lower bug count, or simply producing code faster.
+  :a: Anonymous
   
 
   
