@@ -4,9 +4,8 @@ require "haml"
 require "sass"
 require "compass"
 require "yaml"
-require "multi_json"
-require "oj"
-require 'digest/sha1'
+require "digest/sha1"
+require "json"
 require File.expand_path("../ext/www-middleware", __FILE__)
 
 class HackerSays < Sinatra::Base
@@ -65,12 +64,12 @@ class HackerSays < Sinatra::Base
     content_type 'application/json', :charset => 'utf-8'
     quote = random_quotes(1).first
     quote[:c].gsub!("<br>", $/)
-    MultiJson.dump quote
+    JSON.dump quote
   end
 
   get '/quotes' do
     content_type 'application/json', :charset => 'utf-8'
-    MultiJson.dump random_quotes
+    JSON.dump random_quotes
   end
 
   get '/themes/base.css' do

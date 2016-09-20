@@ -6,8 +6,6 @@ gem "sinatra"
 gem "haml"
 gem "sass"
 gem "compass"
-gem "multi_json"
-gem "oj"
 gem "rake"
 
 group :development do
