@@ -17,7 +17,7 @@ GEM
       tilt
     multi_json (1.12.1)
     puma (3.6.0)
-    rack (1.6.9)
+    rack (1.6.11)
     rack-protection (1.5.4)
       rack
     rack-test (0.6.3)
