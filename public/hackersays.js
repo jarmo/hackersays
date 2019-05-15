@@ -68,7 +68,6 @@ $(function() {
     total--;
 
     History.replaceState(null, "Hacker Says - quote by " + slide.find("cite").text(), slide.data("id"));
-    _gaq.push(['_trackPageview']);
     $("#toolbar")
       .toggleClass("first-quote", index == 0)
       .toggleClass("last-quote", index == total);
