@@ -13,14 +13,6 @@
     %script(type="text/javascript" src="jquery.bxSlider.min.js")
     %script(type="text/javascript" src="jquery.cookie.js")
     %script(type="text/javascript" src="hackersays.js")
-    :javascript
-      var addthis_config = {
-        data_ga_property: _gaq[0][1],
-        data_ga_social: true,
-        services_exclude: "email,print,mailto"
-      };      
-    %script(type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fb7bd6e61eecb7a")
-    
   %body(data-theme="sepia")
     #header
       %h1
@@ -58,13 +50,6 @@
 
     #toolbar
       %a.play(href="#")
-    #share.addthis_toolbox.addthis_default_style
-      %a.addthis_button_preferred_1
-      %a.addthis_button_preferred_2
-      %a.addthis_button_preferred_3
-      %a.addthis_button_preferred_4
-      %a.addthis_button_compact
-      %a.addthis_counter.addthis_bubble_style
 
     #template
       %li
