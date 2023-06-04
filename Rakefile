@@ -1,22 +1,14 @@
-if File.exists? "spec"
+if File.exist? "spec"
   require 'rspec/core/rake_task'
   RSpec::Core::RakeTask.new(:spec)
 end
 
 def app?
-  File.exists? "config.ru"
+  File.exist? "config.ru"
 end
 
 def app_name
-  File.basename(File.dirname(__FILE__))
-end
-
-desc "Deploy to server"
-task :deploy do
-  sh %Q[git ls-files | rsync --delete --delete-excluded --prune-empty-dirs --files-from - -avzhe ssh ./ box:www/#{app_name}]
-  if app?
-    sh %Q[ssh box "/bin/bash -c 'source /etc/profile && cd ~/www/#{app_name} && bundle install --quiet --without development && bundle exec rake restart'"]
-  end
+  "hackersays"
 end
 
 if app?
@@ -24,13 +16,16 @@ if app?
   task :restart => [:stop, :start]
 
   desc "Start app"
-  task :start => :environment do
-    sh %Q[sh -c 'RACK_ENV=production nohup bundle exec rackup -s puma -o 127.0.0.1 -P #{app_name}.pid 1>>#{app_name}.log 2>&1 &']
+  task :start => [:stop, :environment] do
+    `
+RACK_ENV=production bundle exec rackup -s puma -o 127.0.0.1 >>/var/log/#{app_name}/#{app_name}.log 2>&1 &
+echo $! > /var/run/#{app_name}.pid
+`
   end
 
   desc "Stop app"
   task :stop => :environment do
-    sh %Q[if [ -f #{app_name}.pid ]; then kill -9 \$(cat #{app_name}.pid) 2>/dev/null || echo "#{app_name} was not running..."; rm #{app_name}.pid; fi]
+    `if [ -f /var/run/#{app_name}.pid ]; then kill -9 $(cat /var/run/#{app_name}.pid) 2>/dev/null || echo "#{app_name} was not running..."; fi`
   end
 
   task :environment do
@@ -38,4 +33,4 @@ if app?
   end
 end
 
-task :default => :deploy
+task :default => :spec
